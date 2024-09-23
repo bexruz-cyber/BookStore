@@ -768,6 +768,14 @@ body {
 
 @media not all and (min-width: 1536px) {
 
+  .max-2xl\:ml-auto {
+    margin-left: auto;
+  }
+
+  .max-2xl\:hidden {
+    display: none;
+  }
+
   .max-2xl\:pl-\[118px\] {
     padding-left: 118px;
   }
@@ -859,5 +867,12 @@ body {
 
   .md\:text-\[15px\] {
     font-size: 15px;
+  }
+}
+
+@media (min-width: 1536px) {
+
+  .\32xl\:hidden {
+    display: none;
   }
 }
