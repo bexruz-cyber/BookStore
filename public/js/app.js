@@ -1,50 +1,66 @@
-let menu_open_toggle = document.querySelector(".menu_open__toogle");
-let mobile_open_toggle = document.querySelector(".mobile_open_toogle");
+let menuOpenToggle = document.querySelector(".menu_open__toogle");
+let mobileOpenToggle = document.querySelector(".mobile_open_toogle");
 let menu = document.querySelector(".menu");
-let menu_open_btn_svg = document.querySelector(".menu_open_btn__svg");
+let menuOpenBtnSvg = document.querySelector(".menu_open_btn__svg");
+let navLinks = document.querySelectorAll(".nav_link");
 
 function toggleMenu() {
   if (window.innerWidth < 768) {
     menu.classList.toggle("-left-[100%]");
+    menu.classList.add("bg-white");
   } else {
     menu.classList.toggle("-left-[242px]");
     menu.classList.toggle("active_menu");
+    menu.classList.toggle("bg-white");
+    menu.classList.remove("-left-[100%]");
   }
   menu.classList.toggle("left-0");
-  menu.classList.toggle("bg-white");
-  menu_open_btn_svg.classList.toggle("-rotate-90");
-  menu_open_btn_svg.classList.toggle("rotate-90");
+  menuOpenBtnSvg.classList.toggle("-rotate-90");
+  menuOpenBtnSvg.classList.toggle("rotate-90");
 }
 
-menu_open_toggle.addEventListener("click", toggleMenu);
-mobile_open_toggle.addEventListener("click", toggleMenu);
+menuOpenToggle.addEventListener("click", toggleMenu);
+mobileOpenToggle.addEventListener("click", toggleMenu);
 
-// Set initial state for the menu based on screen size
-if (window.innerWidth < 768) {
-  menu.classList.add("-left-[100%]");
-  menu.classList.add("active_menu");
-} else {
-  menu.classList.add("-left-[242px]");
+// Sahifa yuklanganda yoki o'lcham o'zgarganda menu holatini o'rnatish
+function setMenuInitialState() {
+  if (window.innerWidth < 768) {
+    menu.classList.add("-left-[100%]");
+    menu.classList.add("bg-white");
+    menu.classList.remove("-left-[242px]");
+  } else {
+    menu.classList.add("-left-[242px]");
+    menu.classList.remove("-left-[100%]");
+    menu.classList.remove("left-0");
+    menu.classList.add("bg-white");
+    menuOpenBtnSvg.classList.add("-rotate-90");
+    menuOpenBtnSvg.classList.remove("rotate-90");
+  }
 }
 
+// Sahifa yuklanganda boshlang'ich holatni o'rnatish
+setMenuInitialState();
 
-if(document.nav_link){
-  nav_link.forEach(function (item, index) {
-    item.addEventListener("click", function () {
-      nav_link.forEach((item) => {
-        item.classList.remove("font-semibold");
-        item.classList.add("font-light");
-        item.classList.add("pl-0");
-        item.classList.remove("pl-[9px]");
-      });
-      nav_link[index].classList.add("font-semibold");
-      nav_link[index].classList.add("pl-[9px]");
-      menu.classList.add("-left-[242px]");
-      menu.classList.remove("left-0");
-      menu.classList.add("bg-white");
-      menu.classList.remove("active_menu");
-      menu_open_btn__svg.classList.remove("-rotate-90");
-      menu_open_btn__svg.classList.add("rotate-90");
+// Sahifa o'lchami o'zgarganda menu holatini yangilash
+window.addEventListener("resize", setMenuInitialState);
+
+navLinks.forEach(function (item, index) {
+  item.addEventListener("click", function () {
+    navLinks.forEach((item) => {
+      item.classList.remove("font-semibold");
+      item.classList.add("font-light");
+      item.classList.add("pl-0");
+      item.classList.remove("pl-[9px]");
     });
+    navLinks[index].classList.add("font-semibold");
+    navLinks[index].classList.add("pl-[9px]");
+
+    if (window.innerWidth < 768) {
+      menu.classList.add("-left-[100%]");
+      menu.classList.remove("left-0");
+      menu.classList.remove("bg-white");
+      menuOpenBtnSvg.classList.remove("-rotate-90");
+      menuOpenBtnSvg.classList.add("rotate-90");
+    }
   });
-}
+});

@@ -10,14 +10,14 @@
 </head>
 
 <body>
-<div class="">
+    <div class="max-w-[1416px] mx-auto">
         <!-- header start -->
         <header class=" max-md:pl-0 max-2xl:pl-[118px] md:pt-[18px] md:pb-5 py-6">
-            <div class="max-w-[1241px] w-full mx-auto flex items-center  max-2xl:px-5">
+            <div class="max-w-[1241px] ml-auto w-full  flex items-center  max-2xl:px-5">
                 <button class="mobile_open_toogle md:hidden mr-2">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4 5H20V7H4V5ZM4 11H20V13H4V11ZM20 17H4V19H20V17Z"
-                            fill="#3B3B3B" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M4 5H20V7H4V5ZM4 11H20V13H4V11ZM20 17H4V19H20V17Z" fill="#3B3B3B" />
                     </svg>
                 </button>
                 <a href="#" class="flex max-w-[160px] max-md:max-w-[99px] w-full">
@@ -50,9 +50,9 @@
         <!-- header end -->
         <!-- nav menu start -->
         <div
-            class="min-[1920px]:hidden menu z-30 md:border-r max-md:pt-10 max-md:top-[74px] md:border-[#D9D9D9] transition-all duration-300 w-full md:max-w-[360px] fixed top-0 -left-[242px] h-screen  bg-white pl-5  md:pl-9 pr-[58px]">
+            class="min-[1920px]:hidden menu z-30 md:border-r max-md:pt-10 max-md:top-[74px] md:border-[#D9D9D9] transition-all duration-300 w-full md:max-w-[360px] fixed top-0 -left-[242px] h-screen  bg-white pl-5  md:pl-9 ">
             <div class="flex">
-                <ul class="md:mt-[136px] flex flex-col gap-6">
+                <ul class="md:mt-[136px]  flex flex-col gap-6">
                     <li><a href="#"
                             class="nav_link pl-0 transition-all duration-300 font-light text-lg text-[#3B3B3B] leading-6">Об
                             авторе</a></li>
@@ -72,29 +72,33 @@
                             class="nav_link pl-0 transition-all duration-300 font-light text-lg text-[#3B3B3B] leading-6">О
                             нас</a></li>
                 </ul>
-                <div class="max-md:hidden max-w-6 mt-[350px] ml-auto">
-                    <button class="menu_open__toogle w-full flex items-center gap-1  rotate-90">
+                <div class="max-md:hidden menu_open__toogle  max-w-[118px]  w-full h-screen pt-[350px]  ml-auto">
+                    <button class="mx-auto flex items-center gap-1  rotate-90">
                         <svg class="transition-all duration-300 flex-shrink-0 -rotate-90 menu_open_btn__svg" width="24"
                             height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M9.59 7.42L14.17 12L9.59 16.59L11 18L17 12L11 6L9.59 7.42Z" fill="#4F4F4F" />
                         </svg>
-                        <span class="font-bold text-[15px] text-[#434343]">меню</span>
+                        <span class="font-bold text-[15px] text-[#434343] rotate-180 leading-6 uppercase" style="
+                        letter-spacing: 0.01em;
+                        ">меню</span>
                     </button>
                 </div>
             </div>
         </div>
         <!-- nav menu end -->
         <!-- hero start -->
-        <section class="max-[1700px]:pl-[118px] max-md:pl-0  ">
-            <div class="max-w-[1416px] w-full mx-auto relative h px-5 pt-[81px] pb-[54px]">
-                <div class="max-w-[791px] absolute top-0 left-0">
-                    <img src="./img/hero/krishna.png" alt="ХАРЕ КРИШНА!" class=" object-cover">
+        <section class="max-md:pl-0  ">
+            <div class="max-w-[1416px] w-full mx-auto relative pt-[81px] max-md:p-0 max-md:pt-10 max-md:px-5 max-[1065px]:pl-[138px]  pr-5  pb-[54px]">
+                <div class="w-[791px] max-md:w-[375px] max-[1065px]:left-[50%] max-md:top-[139px] md:bottom-0 max-[1065px]:translate-x-[-50%]   absolute min-[1065px]:top-0 min-[1065px]:left-0 bottom-0">
+                    <img src="./img/hero/krishna.png" alt="ХАРЕ КРИШНА!" class="w-[791px] object-cover block max-md:hidden">
+                    <img src="./img/hero/mobile_krishna.png" alt="" class="w-[375px] object-cover hidden max-md:block">
                 </div>
-                <div class="pl-[600px] relative z-20 ">
-                    <h1 class="font-bold text-[60px] text-[#3B3B3B] mb-[22px] leading-[62px]">ХАРЕ КРИШНА!</h1>
-                    <h2 class="font-bold text-[76px] gradient-text leading-[85px] ml-[108px]">ВЕЛИКАЯ ПЕСНЬ</h2>
-                    <h3 class="font-bold text-[48px] gradient-text leading-[85px] ml-[50px] mb-[57px]">ОСВОБОЖДЕНИЯ!</h3>
-                    <p class="max-w-[608px] font-normal text-2xl text-[#3B3B3B] leading-[35px] mb-[58px]">
+                <div class="pl-[500px] xl:pl-[600px] max-[1065px]:pl-0  relative z-20">
+                    <h1 class="font-bold 2xl:text-[60px] text-4xl max-[1065px]:mr-auto max-[1065px]:ml-0 text-[#3B3B3B] mb-[22px] min-[1065px]:leading-[62px]">ХАРЕ КРИШНА!</h1>
+                    <h2 class="font-bold 2xl:text-[76px] text-5xl max-[1065px]:mr-auto max-[1065px]:ml-0 xl:text-6xl  gradient-text min-[1065px]:leading-[85px] ml-[108px] mb-[9px]">ВЕЛИКАЯ ПЕСНЬ</h2>
+                    <h3 class="font-bold 2xl:text-[48px] text-4xl max-[1065px]:mr-auto max-[1065px]:ml-0 gradient-text min-[1065px]:leading-[85px] ml-[50px] mb max-[1065px]:mb-[385px] mb-[57px]">ОСВОБОЖДЕНИЯ!
+                    </h3>
+                    <p class="max-w-[608px] font-normal text-xl 2xl:text-2xl text-[#3B3B3B] leading-[35px] mb-8 min-[1065px]:mb-[58px]">
                         <span class="font-semibold">Духовный учитель всего мира</span> <br>
                         Его Божественная Милость Абхай Чаранаравинда <br>
                         Шрила Бхактиведанта Свами Прабхупада
@@ -112,7 +116,7 @@
             </div>
         </section>
         <!-- hero end -->
-</div>
+    </div>
     <script src="./js/app.js"></script>
 </body>
 
