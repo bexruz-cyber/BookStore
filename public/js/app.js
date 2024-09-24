@@ -14,6 +14,7 @@ function toggleMenu() {
     menu.classList.toggle("bg-white");
     menu.classList.remove("-left-[100%]");
   }
+  document.body.classList.toggle("max-md:overflow-y-hidden")
   menu.classList.toggle("left-0");
   menuOpenBtnSvg.classList.toggle("-rotate-90");
   menuOpenBtnSvg.classList.toggle("rotate-90");

@@ -26,3 +26,17 @@ body {
     -webkit-text-fill-color: transparent;
     height: fit-content; /* Yoki kerakli balandlikni bering */
 }
+.arrow_svg{
+    transition: all .3s;
+}
+.arrow_btn:hover .arrow_svg{
+    transform: translateX(10px);
+}
+
+.opacity_hover{
+    transition: all .3s;
+    opacity: 100%;
+}
+.opacity_hover:hover{
+    opacity: 50%;
+}

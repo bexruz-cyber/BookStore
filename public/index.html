@@ -10,9 +10,9 @@
 </head>
 
 <body>
-    <div class="max-w-[1416px] mx-auto">
+    <div class="max-w-[1416px] mx-auto ">
         <!-- header start -->
-        <header class=" max-md:pl-0 max-2xl:pl-[118px] md:pt-[18px] md:pb-5 py-6">
+        <header class="relative z-20 max-md:pl-0 max-2xl:pl-[118px] md:pt-[18px] md:pb-5 py-6">
             <div class="max-w-[1241px] ml-auto w-full  flex items-center  max-2xl:px-5">
                 <button class="mobile_open_toogle md:hidden mr-2">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -24,18 +24,18 @@
                     <img src="./img/header_logo.svg" alt="header_logo" class="object-cover">
                 </a>
                 <ul class=" mx-auto  min-[1920px]:flex hidden gap-6">
-                    <li><a href="#" class=" pl-0  font-light text-lg text-[#3B3B3B] leading-6">Обавторе</a></li>
-                    <li><a href="#" class=" pl-0  font-light text-lg text-[#3B3B3B] leading-6">Книги</a></li>
-                    <li><a href="#" class=" pl-0  font-light text-lg text-[#3B3B3B] leading-6">Комплекты</a> </li>
-                    <li><a href="#" class=" pl-0  font-light text-lg text-[#3B3B3B] leading-6">Блог</a></li>
-                    <li><a href="#" class=" pl-0  font-light text-lg text-[#3B3B3B] leading-6">Медиа</a></li>
-                    <li><a href="#" class=" pl-0  font-light text-lg text-[#3B3B3B] leading-6">О нас</a></li>
+                    <li><a href="#" class=" pl-0 opacity_hover font-light text-lg text-[#3B3B3B] leading-6">Обавторе</a></li>
+                    <li><a href="#" class=" pl-0 opacity_hover font-light text-lg text-[#3B3B3B] leading-6">Книги</a></li>
+                    <li><a href="#" class=" pl-0 opacity_hover font-light text-lg text-[#3B3B3B] leading-6">Комплекты</a> </li>
+                    <li><a href="#" class=" pl-0 opacity_hover font-light text-lg text-[#3B3B3B] leading-6">Блог</a></li>
+                    <li><a href="#" class=" pl-0 opacity_hover font-light text-lg text-[#3B3B3B] leading-6">Медиа</a></li>
+                    <li><a href="#" class=" pl-0 opacity_hover font-light text-lg text-[#3B3B3B] leading-6">О нас</a></li>
                 </ul>
-                <button
+                <a href="#"
                     class="block bg-[#F8F8F8] rounded-[3px] px-3 md:py-2 md:px-5 max-[1920px]:ml-auto   mr-[17px] md:mr-6">
-                    <p class="md:w-[127px] text-center font-light text-sm leading-6 md:text-[15px] text-[#3B3B3B]">О
+                    <p class="md:w-[127px] opacity_hover text-center font-light text-sm leading-6 md:text-[15px] text-[#3B3B3B]">О
                         доставке</p>
-                </button>
+                </a>
                 <a href="#" class="border-l border-[#F2F2F2] relative md:pl-6 md:py-2 pt-0.5">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -54,22 +54,22 @@
             <div class="flex">
                 <ul class="md:mt-[136px]  flex flex-col gap-6">
                     <li><a href="#"
-                            class="nav_link pl-0 transition-all duration-300 font-light text-lg text-[#3B3B3B] leading-6">Об
+                            class="nav_link opacity_hover pl-0 transition-all duration-300 font-light text-lg text-[#3B3B3B] leading-6">Об
                             авторе</a></li>
                     <li><a href="#"
-                            class="nav_link pl-0 transition-all duration-300 font-light text-lg text-[#3B3B3B] leading-6">Книги</a>
+                            class="nav_link opacity_hover pl-0 transition-all duration-300 font-light text-lg text-[#3B3B3B] leading-6">Книги</a>
                     </li>
                     <li><a href="#"
-                            class="nav_link pl-0 transition-all duration-300 font-light text-lg text-[#3B3B3B] leading-6">Комплекты</a>
+                            class="nav_link opacity_hover pl-0 transition-all duration-300 font-light text-lg text-[#3B3B3B] leading-6">Комплекты</a>
                     </li>
                     <li><a href="#"
-                            class="nav_link pl-0 transition-all duration-300 font-light text-lg text-[#3B3B3B] leading-6">Блог</a>
+                            class="nav_link opacity_hover pl-0 transition-all duration-300 font-light text-lg text-[#3B3B3B] leading-6">Блог</a>
                     </li>
                     <li><a href="#"
-                            class="nav_link pl-0 transition-all duration-300 font-light text-lg text-[#3B3B3B] leading-6">Медиа</a>
+                            class="nav_link opacity_hover pl-0 transition-all duration-300 font-light text-lg text-[#3B3B3B] leading-6">Медиа</a>
                     </li>
                     <li><a href="#"
-                            class="nav_link pl-0 transition-all duration-300 font-light text-lg text-[#3B3B3B] leading-6">О
+                            class="nav_link opacity_hover pl-0 transition-all duration-300 font-light text-lg text-[#3B3B3B] leading-6">О
                             нас</a></li>
                 </ul>
                 <div class="max-md:hidden menu_open__toogle  max-w-[118px]  w-full h-screen pt-[350px]  ml-auto">
@@ -88,24 +88,35 @@
         <!-- nav menu end -->
         <!-- hero start -->
         <section class="max-md:pl-0  ">
-            <div class="max-w-[1416px] w-full mx-auto relative pt-[81px] max-md:p-0 max-md:pt-10 max-md:px-5 max-[1065px]:pl-[138px]  pr-5  pb-[54px]">
-                <div class="w-[791px] max-md:w-[375px] max-[1065px]:left-[50%] max-md:top-[139px] md:bottom-0 max-[1065px]:translate-x-[-50%]   absolute min-[1065px]:top-0 min-[1065px]:left-0 bottom-0">
-                    <img src="./img/hero/krishna.png" alt="ХАРЕ КРИШНА!" class="w-[791px] object-cover block max-md:hidden">
+            <div
+                class="max-w-[1416px] w-full mx-auto relative pt-[81px] max-md:p-0 max-md:pt-10 max-md:px-5 max-[1065px]:pl-[138px]  pr-5  pb-[54px]">
+                <div
+                    class="w-[791px] max-md:w-[375px] max-[1065px]:left-[50%] max-md:top-[139px] md:bottom-0 max-[1065px]:translate-x-[-50%]   absolute min-[1065px]:top-[-47px] min-[1065px]:left-0 bottom-0">
+                    <img src="./img/hero/krishna.png" alt="ХАРЕ КРИШНА!"
+                        class="w-[791px] object-cover block max-xl:h-[630px] max-[1065px]:hidden">
                     <img src="./img/hero/mobile_krishna.png" alt="" class="w-[375px] object-cover hidden max-md:block">
                 </div>
                 <div class="pl-[500px] xl:pl-[600px] max-[1065px]:pl-0  relative z-20">
-                    <h1 class="font-bold 2xl:text-[60px] text-4xl max-[1065px]:mr-auto max-[1065px]:ml-0 text-[#3B3B3B] mb-[22px] min-[1065px]:leading-[62px]">ХАРЕ КРИШНА!</h1>
-                    <h2 class="font-bold 2xl:text-[76px] text-5xl max-[1065px]:mr-auto max-[1065px]:ml-0 xl:text-6xl  gradient-text min-[1065px]:leading-[85px] ml-[108px] mb-[9px]">ВЕЛИКАЯ ПЕСНЬ</h2>
-                    <h3 class="font-bold 2xl:text-[48px] text-4xl max-[1065px]:mr-auto max-[1065px]:ml-0 gradient-text min-[1065px]:leading-[85px] ml-[50px] mb max-[1065px]:mb-[385px] mb-[57px]">ОСВОБОЖДЕНИЯ!
+                    <h1
+                        class="font-bold 2xl:text-[60px] max-md:text-center max-md:text-4xl max-md:mb-[18px] max-md:leading-7 text-4xl max-[1065px]:mr-auto max-[1065px]:ml-0 text-[#3B3B3B] mb-[22px] xl:leading-[62px]">
+                        ХАРЕ КРИШНА!</h1>
+                    <h2
+                        class="font-bold 2xl:text-[76px] max-md:text-center max-md:text-[28px] max-md:leading-6 text-5xl max-[1065px]:mr-auto max-[1065px]:ml-0 xl:text-6xl  gradient-text xl:leading-[85px] ml-[108px] md:mb-[9px] max-md:mb-[17px]">
+                        ВЕЛИКАЯ ПЕСНЬ</h2>
+                    <h3
+                        class="font-bold 2xl:text-[48px] max-md:text-center max-md:text-[22px] max-md:leading-6 text-4xl max-[1065px]:mr-auto max-[1065px]:ml-0 gradient-text xl:leading-[85px] ml-[50px] mb max-md:mb-[385px] mb-[57px]">
+                        ОСВОБОЖДЕНИЯ!
                     </h3>
-                    <p class="max-w-[608px] font-normal text-xl 2xl:text-2xl text-[#3B3B3B] leading-[35px] mb-8 min-[1065px]:mb-[58px]">
+                    <p
+                        class="max-w-[608px] font-normal text-lg md:text-xl 2xl:text-2xl text-[#3B3B3B] leading-[26px] max-md:max-w-[290px] max-md:mx-auto md:leading-[35px] mb-[38px] min-[1065px]:mb-[58px]">
                         <span class="font-semibold">Духовный учитель всего мира</span> <br>
                         Его Божественная Милость Абхай Чаранаравинда <br>
                         Шрила Бхактиведанта Свами Прабхупада
                     </p>
-                    <a href="#" class="flex items-center justify-end gap-2 ">
+                    <a href="#"
+                        class="flex arrow_btn items-center justify-end gap-2 font-normal text-[15px] text-[#434343] leading-6">
                         Об авторе
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="arrow_svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M4 12H20" stroke="#474747" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" />
                             <path d="M14 6L20 12L14 18" stroke="#434343" stroke-width="2" stroke-linecap="round"
@@ -116,6 +127,82 @@
             </div>
         </section>
         <!-- hero end -->
+        <!-- about start -->
+        <section class="pb-[110px] max-md:pb-[50px] max-md:pl-0 max-2xl:pl-[118px] pt-[34px] max-md:pt-[38px] ">
+            <div class="max-w-[1240px] ml-auto flex max-md:flex-col-reverse justify-between gap-5 px-5">
+                <div class="bg-[#F8F8F8] max-w-[756px] pt-[114px] max-md:pt-9 max-md:pb-14 max-md:px-[42px]">
+                    <p
+                        class="font-light text-lg xl:text-2xl text-[#3B3B3B] leading-[26px] xl:leading-[39px] mb-9 md:mb-[55px]">
+                        Моя миссия заключается в проповеди философии Господа Чайтаньи, в повторении: <span
+                            class="font-semibold">
+                            «Харе Кришна Харе Кришна, Кришна Кришна Харе Харе / Харе Рама Харе Рама, Рама Рама Харе
+                            Харе»
+                        </span> этот трансцендентный
+                        звук очистит ум от всякой скверны не важно кем бы человек не был, этот трансцендентный звук
+                        одинаково подходит каждому независимо от языка, национальности, вероисповедания и касты,
+                        поскольку этот звук исходит из глубины души.
+                    </p>
+                    <i class="block max-w-[183px] text-right font-normal text-[15px] text-[#3B3B3B] w-full ml-auto">Любовь
+                        к Богу — высшее благо для всех людей</i>
+                </div>
+                <div class="md:w-[365px] max-md:w-full">
+                    <div class="xl:max-w-[365px] md:w-[365px] max-md:w-full  xl:w-full flex">
+                        <img src="./img/about/love.png" alt="Что не является любовью?"
+                            class="max-md:h-[390px] w-full object-cover">
+                    </div>
+                    <h2
+                        class="bg-[#3B3B3B] font-bold text-[40px] text-white leading-[54px] pt-[33px] pb-[34px] pl-6 pr-[37px]">
+                        Что <br> не является любовью?</h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="pb-[162px] max-md:pb-[56px] max-md:pl-0 max-2xl:pl-[118px]">
+            <div class="max-w-[1240px] ml-auto flex justify-between  px-5">
+                <div class="max-w-[355px] w-full">
+                    <h1 class="font-bold text-[40px] leading-[50px] text-[#3B3B3B] mb-3">Шримад - бхагаватам</h1>
+                    <i class="block font-normal text-[15px] text-[#828080] mb-[21px]">Песень 2, глава 2, 2.2.37</i>
+                    <p class="font-normal text-2xl text-[#3B3B3B] leading-[35px]">
+                        Те, кто упивается нектарным посланием Господа Кришны, возлюбленного преданных,
+                        освобождаются от порочных представлений о том, что целью жизни являются материальные
+                        наслаждения, и возвращаются обратно к <br> Богу, к Его [Верховного <br> Господа] лотосным стопам.
+                    </p>
+                </div>
+                <div class="max-w-[729px]">
+                    <i class="max-w-[528px] block font-normal text-2xl text-[#3B3B3B] leading-[35px] mb-[33px]">
+                        пибанти йе бхагавата а̄тманах̣ сата̄м̇
+                        катха̄мр̣там̇ ш́раван̣а-пут̣ешу самбхр̣там
+                        пунанти те вишайа-видӯшита̄ш́айам̇
+                        враджанти тач-чаран̣а-сароруха̄нтикам
+                    </i>
+                    <i class="block font-normal text-[15px] text-[#828080] mb-[43px]">Пословный перевод</i>
+                    <i class="block border-l-2 border-[#E122F9] font-normal text-[15px] text-[#828080] leading-[23px] pl-12 mb-[53px]">
+                        Пибанти — пьют; йе — которые; бхагаватах̣ — Личности Бога; а̄тманах̣— самого близкого; сата̄м —
+                        для преданных; <br>
+                        катха̄- амр̣там — нектар посланий; ш́раван̣а-пут̣ешу — в ушах; самбхр̣там — наполненных; пунанти
+                        — очищают; те — их; <br>
+                        вишайа — материальным наслаждением; видӯшита-а̄ш́айам — оскверненные <br> представления о цели жизни; <br>
+                        враджанти — отправляются обратно; тат — Господа; чаран̣а — стоп; сароруха-антикам — возле
+                        лотоса.
+                    </i>
+                    <div class="flex items-center justify-between gap-5">
+                        <a href="#" class="font-normal text-[15px] text-[#5C90DE] leading-[35px]">Перейти к товару</a>
+                        <a href="#" class="flex items-center gap-x-2.5">
+                            <span class="font-normal text-[15px] text-[#3B3B3B] leading-[35px]">показать следующий стих</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 12H20" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M14 6L20 12L14 18" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about end -->
+
     </div>
     <script src="./js/app.js"></script>
 </body>
