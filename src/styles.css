@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -17,26 +17,89 @@ body {
     font-family: museo, sans-serif;
 }
 
-.active_menu{
+.active_menu {
     background: linear-gradient(88.49deg, rgba(255, 255, 255, 0.97) 37.18%, rgba(255, 255, 255, 0.87) 54.88%, rgba(255, 255, 255, 0.64) 69.27%, rgba(255, 255, 255, 0) 98.89%);
 }
+
 .gradient-text {
     background: linear-gradient(90.21deg, #E122F9 4.11%, #6F2FF5 53.99%, #2B1EDD 99.88%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    height: fit-content; /* Yoki kerakli balandlikni bering */
+    height: fit-content;
+    /* Yoki kerakli balandlikni bering */
 }
-.arrow_svg{
+
+.arrow_svg {
     transition: all .3s;
 }
-.arrow_btn:hover .arrow_svg{
+
+.arrow_btn:hover .arrow_svg {
     transform: translateX(10px);
 }
 
-.opacity_hover{
+.opacity_hover {
     transition: all .3s;
     opacity: 100%;
 }
-.opacity_hover:hover{
+
+.opacity_hover:hover {
     opacity: 50%;
+}
+
+.title {
+    font-weight: bold;
+    /* font-bold */
+    font-size: 2.25rem;
+    /* text-4xl (equivalent to 36px) */
+    line-height: 2.25rem;
+    /* leading-9 */
+    color: #3B3B3B;
+    /* text-[#3B3B3B] */
+}
+
+.linear_default_gradiend {
+    background: linear-gradient(82.09deg, #E122F9 -1.27%, #2B1EDD 69.03%);
+    box-shadow: 0px 5px 30px 0px #00000012;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+    /* Skrollning kengligi */
+    border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #2B1EDD;
+    /* Skrollning rangi */
+    border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background-color: #EDEDED;
+    /* Skroll trekining rangi */
+}
+
+
+.audio_top {
+    background-image: url(../../public/img/audio/bg.png);
+    background-size: cover;
+}
+
+@media(max-width: 768px){
+    .audio_top {
+        background-image: url(../../public/img/audio/mobile_bg.png);
+        background-size: cover;
+    }
+}
+
+@media (min-width: 768px) {
+
+    /* md breakpoint */
+    .title {
+        font-size: 40px;
+        /* md:text-[40px] */
+        line-height: 50px;
+        /* md:leading-[50px] */
+    }
+
 }

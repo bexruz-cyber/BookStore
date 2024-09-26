@@ -9,201 +9,956 @@
     <title>Home</title>
 </head>
 
-<body>
-    <div class="max-w-[1416px] mx-auto ">
-        <!-- header start -->
-        <header class="relative z-20 max-md:pl-0 max-2xl:pl-[118px] md:pt-[18px] md:pb-5 py-6">
-            <div class="max-w-[1241px] ml-auto w-full  flex items-center  max-2xl:px-5">
-                <button class="mobile_open_toogle md:hidden mr-2">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M4 5H20V7H4V5ZM4 11H20V13H4V11ZM20 17H4V19H20V17Z" fill="#3B3B3B" />
-                    </svg>
-                </button>
-                <a href="#" class="flex max-w-[160px] max-md:max-w-[99px] w-full">
-                    <img src="./img/header_logo.svg" alt="header_logo" class="object-cover">
-                </a>
-                <ul class=" mx-auto  min-[1920px]:flex hidden gap-6">
-                    <li><a href="#" class=" pl-0 opacity_hover font-light text-lg text-[#3B3B3B] leading-6">Обавторе</a></li>
-                    <li><a href="#" class=" pl-0 opacity_hover font-light text-lg text-[#3B3B3B] leading-6">Книги</a></li>
-                    <li><a href="#" class=" pl-0 opacity_hover font-light text-lg text-[#3B3B3B] leading-6">Комплекты</a> </li>
-                    <li><a href="#" class=" pl-0 opacity_hover font-light text-lg text-[#3B3B3B] leading-6">Блог</a></li>
-                    <li><a href="#" class=" pl-0 opacity_hover font-light text-lg text-[#3B3B3B] leading-6">Медиа</a></li>
-                    <li><a href="#" class=" pl-0 opacity_hover font-light text-lg text-[#3B3B3B] leading-6">О нас</a></li>
-                </ul>
-                <a href="#"
-                    class="block bg-[#F8F8F8] rounded-[3px] px-3 md:py-2 md:px-5 max-[1920px]:ml-auto   mr-[17px] md:mr-6">
-                    <p class="md:w-[127px] opacity_hover text-center font-light text-sm leading-6 md:text-[15px] text-[#3B3B3B]">О
-                        доставке</p>
-                </a>
-                <a href="#" class="border-l border-[#F2F2F2] relative md:pl-6 md:py-2 pt-0.5">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M1.53701 3.06631C1.32593 3.15497 1.13209 3.35869 1.05205 3.57603C1.00513 3.70348 0.994784 3.77842 1.00215 3.93773C1.01802 4.28051 1.18636 4.54052 1.49142 4.69348L1.66736 4.78168L2.75292 4.7895L3.83847 4.7973L3.86426 4.89667C3.87845 4.9513 4.41072 7.11662 5.04714 9.70844C6.01165 13.6367 6.21965 14.4526 6.297 14.6114C6.51771 15.0646 6.94295 15.4113 7.43532 15.5395C7.60345 15.5833 7.73125 15.5926 8.18018 15.5942L8.72208 15.5961L8.49271 15.6453C8.17423 15.7137 8.02124 15.7678 7.75612 15.9058C7.09089 16.2522 6.60178 16.8634 6.38788 17.6156C6.33403 17.805 6.32722 17.8847 6.32851 18.3117C6.32985 18.7586 6.33524 18.8115 6.40178 19.0319C6.68763 19.9791 7.38805 20.6664 8.33585 20.9297C8.62731 21.0107 9.2906 21.0107 9.58206 20.9297C10.0873 20.7894 10.5088 20.5376 10.8551 20.1692C11.0996 19.9091 11.2268 19.7215 11.3704 19.4095C11.5499 19.0196 11.587 18.8332 11.5887 18.3117C11.59 17.916 11.5822 17.8264 11.5293 17.6285C11.3363 16.9075 10.8564 16.2842 10.2308 15.9424C9.96473 15.797 9.79229 15.7313 9.48533 15.6585L9.22214 15.5961L12.9463 15.5969C16.5331 15.5977 16.6626 15.5995 16.4599 15.6438C15.8799 15.7707 15.4378 16.0094 15.0584 16.4004C14.732 16.7368 14.5514 17.0349 14.4091 17.472C13.8278 19.257 15.2282 21.1066 17.0767 20.9952C17.754 20.9544 18.3257 20.6851 18.8154 20.1761C19.3524 19.618 19.6053 18.9485 19.57 18.1778C19.5127 16.9222 18.65 15.9126 17.4073 15.6468L17.1705 15.5961L17.71 15.5937C18.3324 15.591 18.5111 15.562 18.7932 15.4179C19.1802 15.2202 19.4723 14.9117 19.6324 14.5315C19.6618 14.4615 20.0298 13.1193 20.4501 11.5488C20.8703 9.97829 21.391 8.03404 21.6071 7.22821C21.8232 6.42238 22 5.75022 22 5.73454C22 5.71442 19.8145 5.70601 14.5943 5.70601H7.18866L7.38424 6.50308C7.49178 6.94148 7.5915 7.34537 7.60584 7.40062L7.63187 7.50109H13.6732H19.7144L19.6978 7.57476C19.6886 7.6153 19.3115 9.02891 18.8597 10.7161L18.0383 13.7839L12.9591 13.7906L7.87988 13.7973L6.69839 8.99478C5.46703 3.98954 5.47843 4.0315 5.26406 3.71433C5.0943 3.46316 4.73384 3.19923 4.39261 3.07628C4.22441 3.01567 4.20028 3.01452 2.95823 3.00731L1.69492 3L1.53701 3.06631ZM9.34679 17.4918C9.51447 17.5751 9.6763 17.7443 9.75921 17.9232C9.81603 18.0459 9.82748 18.1089 9.82748 18.2989C9.82748 18.5026 9.81822 18.5463 9.74139 18.7052C9.58545 19.0277 9.32039 19.1929 8.95895 19.1929C8.78841 19.1929 8.72029 19.1798 8.60049 19.1238C8.40162 19.0309 8.26095 18.8958 8.16791 18.7084C8.09961 18.5708 8.09069 18.5251 8.09056 18.3117C8.09048 18.1641 8.10501 18.0342 8.12801 17.9768C8.22352 17.7385 8.42199 17.5435 8.65629 17.4576C8.8317 17.3933 9.1834 17.4108 9.34679 17.4918ZM17.3294 17.5007C17.4913 17.5854 17.667 17.7743 17.7422 17.9441C17.8284 18.1389 17.8236 18.4765 17.7319 18.6774C17.6074 18.9498 17.394 19.1191 17.0964 19.1816C16.4189 19.324 15.8598 18.6355 16.1069 17.9632C16.1807 17.7625 16.3851 17.5496 16.5785 17.4719C16.787 17.3882 17.1406 17.4017 17.3294 17.5007Z"
-                            fill="#3B3B3B" />
-                    </svg>
-                    <span
-                        class="max-w-[16px] font-semibold text-[11px] leading-[6px] text-white inline-block  text-center bg-[#2B1EDD] rounded-full absolute md:top-1 -top-1 -right-0.5 py-[5px] px-[6px]">5</span>
-                </a>
-            </div>
-        </header>
-        <!-- header end -->
-        <!-- nav menu start -->
+<body class="overflow-x-hidden">
+    <!-- header start -->
+    <header class="relative z-20 max-md:pl-0 max-2xl:pl-[118px] md:pt-[18px] md:pb-5 py-6">
+        <div class="max-w-[1240px] mx-auto w-full  flex items-center px-5">
+            <button class="mobile_open_toogle md:hidden mr-2">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4 5H20V7H4V5ZM4 11H20V13H4V11ZM20 17H4V19H20V17Z"
+                        fill="#3B3B3B" />
+                </svg>
+            </button>
+            <a href="#" class="flex max-w-[160px] max-md:max-w-[99px] w-full">
+                <img src="./img/header_logo.svg" alt="header_logo" class="object-cover">
+            </a>
+            <ul class=" mx-auto  min-[1920px]:flex hidden gap-6">
+                <li><a href="#" class=" pl-0 opacity_hover font-light text-lg text-[#3B3B3B] leading-6">Обавторе</a>
+                </li>
+                <li><a href="#" class=" pl-0 opacity_hover font-light text-lg text-[#3B3B3B] leading-6">Книги</a>
+                </li>
+                <li><a href="#" class=" pl-0 opacity_hover font-light text-lg text-[#3B3B3B] leading-6">Комплекты</a>
+                </li>
+                <li><a href="#" class=" pl-0 opacity_hover font-light text-lg text-[#3B3B3B] leading-6">Блог</a>
+                </li>
+                <li><a href="#" class=" pl-0 opacity_hover font-light text-lg text-[#3B3B3B] leading-6">Медиа</a>
+                </li>
+                <li><a href="#" class=" pl-0 opacity_hover font-light text-lg text-[#3B3B3B] leading-6">О нас</a>
+                </li>
+            </ul>
+            <a href="#"
+                class="block bg-[#F8F8F8] rounded-[3px] px-3 md:py-2 md:px-5 max-[1920px]:ml-auto   mr-[17px] md:mr-6">
+                <p
+                    class="md:w-[127px] opacity_hover text-center font-light text-sm leading-6 md:text-[15px] text-[#3B3B3B]">
+                    О
+                    доставке</p>
+            </a>
+            <a href="#" class="border-l border-[#F2F2F2] relative md:pl-6 md:py-2 pt-0.5">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M1.53701 3.06631C1.32593 3.15497 1.13209 3.35869 1.05205 3.57603C1.00513 3.70348 0.994784 3.77842 1.00215 3.93773C1.01802 4.28051 1.18636 4.54052 1.49142 4.69348L1.66736 4.78168L2.75292 4.7895L3.83847 4.7973L3.86426 4.89667C3.87845 4.9513 4.41072 7.11662 5.04714 9.70844C6.01165 13.6367 6.21965 14.4526 6.297 14.6114C6.51771 15.0646 6.94295 15.4113 7.43532 15.5395C7.60345 15.5833 7.73125 15.5926 8.18018 15.5942L8.72208 15.5961L8.49271 15.6453C8.17423 15.7137 8.02124 15.7678 7.75612 15.9058C7.09089 16.2522 6.60178 16.8634 6.38788 17.6156C6.33403 17.805 6.32722 17.8847 6.32851 18.3117C6.32985 18.7586 6.33524 18.8115 6.40178 19.0319C6.68763 19.9791 7.38805 20.6664 8.33585 20.9297C8.62731 21.0107 9.2906 21.0107 9.58206 20.9297C10.0873 20.7894 10.5088 20.5376 10.8551 20.1692C11.0996 19.9091 11.2268 19.7215 11.3704 19.4095C11.5499 19.0196 11.587 18.8332 11.5887 18.3117C11.59 17.916 11.5822 17.8264 11.5293 17.6285C11.3363 16.9075 10.8564 16.2842 10.2308 15.9424C9.96473 15.797 9.79229 15.7313 9.48533 15.6585L9.22214 15.5961L12.9463 15.5969C16.5331 15.5977 16.6626 15.5995 16.4599 15.6438C15.8799 15.7707 15.4378 16.0094 15.0584 16.4004C14.732 16.7368 14.5514 17.0349 14.4091 17.472C13.8278 19.257 15.2282 21.1066 17.0767 20.9952C17.754 20.9544 18.3257 20.6851 18.8154 20.1761C19.3524 19.618 19.6053 18.9485 19.57 18.1778C19.5127 16.9222 18.65 15.9126 17.4073 15.6468L17.1705 15.5961L17.71 15.5937C18.3324 15.591 18.5111 15.562 18.7932 15.4179C19.1802 15.2202 19.4723 14.9117 19.6324 14.5315C19.6618 14.4615 20.0298 13.1193 20.4501 11.5488C20.8703 9.97829 21.391 8.03404 21.6071 7.22821C21.8232 6.42238 22 5.75022 22 5.73454C22 5.71442 19.8145 5.70601 14.5943 5.70601H7.18866L7.38424 6.50308C7.49178 6.94148 7.5915 7.34537 7.60584 7.40062L7.63187 7.50109H13.6732H19.7144L19.6978 7.57476C19.6886 7.6153 19.3115 9.02891 18.8597 10.7161L18.0383 13.7839L12.9591 13.7906L7.87988 13.7973L6.69839 8.99478C5.46703 3.98954 5.47843 4.0315 5.26406 3.71433C5.0943 3.46316 4.73384 3.19923 4.39261 3.07628C4.22441 3.01567 4.20028 3.01452 2.95823 3.00731L1.69492 3L1.53701 3.06631ZM9.34679 17.4918C9.51447 17.5751 9.6763 17.7443 9.75921 17.9232C9.81603 18.0459 9.82748 18.1089 9.82748 18.2989C9.82748 18.5026 9.81822 18.5463 9.74139 18.7052C9.58545 19.0277 9.32039 19.1929 8.95895 19.1929C8.78841 19.1929 8.72029 19.1798 8.60049 19.1238C8.40162 19.0309 8.26095 18.8958 8.16791 18.7084C8.09961 18.5708 8.09069 18.5251 8.09056 18.3117C8.09048 18.1641 8.10501 18.0342 8.12801 17.9768C8.22352 17.7385 8.42199 17.5435 8.65629 17.4576C8.8317 17.3933 9.1834 17.4108 9.34679 17.4918ZM17.3294 17.5007C17.4913 17.5854 17.667 17.7743 17.7422 17.9441C17.8284 18.1389 17.8236 18.4765 17.7319 18.6774C17.6074 18.9498 17.394 19.1191 17.0964 19.1816C16.4189 19.324 15.8598 18.6355 16.1069 17.9632C16.1807 17.7625 16.3851 17.5496 16.5785 17.4719C16.787 17.3882 17.1406 17.4017 17.3294 17.5007Z"
+                        fill="#3B3B3B" />
+                </svg>
+                <span
+                    class="max-w-[16px] font-semibold text-[11px] leading-[6px] text-white inline-block  text-center bg-[#2B1EDD] rounded-full absolute md:top-1 -top-1 -right-0.5 py-[5px] px-[6px]">5</span>
+            </a>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- hero start -->
+    <section class="max-md:pl-0  ">
         <div
-            class="min-[1920px]:hidden menu z-30 md:border-r max-md:pt-10 max-md:top-[74px] md:border-[#D9D9D9] transition-all duration-300 w-full md:max-w-[360px] fixed top-0 -left-[242px] h-screen  bg-white pl-5  md:pl-9 ">
-            <div class="flex">
-                <ul class="md:mt-[136px]  flex flex-col gap-6">
-                    <li><a href="#"
-                            class="nav_link opacity_hover pl-0 transition-all duration-300 font-light text-lg text-[#3B3B3B] leading-6">Об
-                            авторе</a></li>
-                    <li><a href="#"
-                            class="nav_link opacity_hover pl-0 transition-all duration-300 font-light text-lg text-[#3B3B3B] leading-6">Книги</a>
-                    </li>
-                    <li><a href="#"
-                            class="nav_link opacity_hover pl-0 transition-all duration-300 font-light text-lg text-[#3B3B3B] leading-6">Комплекты</a>
-                    </li>
-                    <li><a href="#"
-                            class="nav_link opacity_hover pl-0 transition-all duration-300 font-light text-lg text-[#3B3B3B] leading-6">Блог</a>
-                    </li>
-                    <li><a href="#"
-                            class="nav_link opacity_hover pl-0 transition-all duration-300 font-light text-lg text-[#3B3B3B] leading-6">Медиа</a>
-                    </li>
-                    <li><a href="#"
-                            class="nav_link opacity_hover pl-0 transition-all duration-300 font-light text-lg text-[#3B3B3B] leading-6">О
-                            нас</a></li>
-                </ul>
-                <div class="max-md:hidden menu_open__toogle  max-w-[118px]  w-full h-screen pt-[350px]  ml-auto">
-                    <button class="mx-auto flex items-center gap-1  rotate-90">
-                        <svg class="transition-all duration-300 flex-shrink-0 -rotate-90 menu_open_btn__svg" width="24"
-                            height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9.59 7.42L14.17 12L9.59 16.59L11 18L17 12L11 6L9.59 7.42Z" fill="#4F4F4F" />
-                        </svg>
-                        <span class="font-bold text-[15px] text-[#434343] rotate-180 leading-6 uppercase" style="
-                        letter-spacing: 0.01em;
-                        ">меню</span>
-                    </button>
-                </div>
+            class="max-w-[1240px] w-full mx-auto relative pt-[81px] max-md:p-0 max-md:pt-10 max-md:px-5 max-[1065px]:pl-[138px]  pr-5  pb-[54px]">
+            <div
+                class="w-[791px] max-md:w-[375px] max-[1065px]:left-[50%] max-md:top-[139px] md:bottom-0 max-[1065px]:translate-x-[-50%]   absolute min-[1065px]:top-[-47px] min-[1920px]:left-[-213px] bottom-0">
+                <img src="./img/hero/krishna.png" alt="ХАРЕ КРИШНА!"
+                    class="w-[791px] object-cover block max-xl:h-[630px] max-[1065px]:hidden">
+                <img src="./img/hero/mobile_krishna.png" alt="" class="w-[375px] object-cover hidden max-md:block">
+            </div>
+            <div class=" ml-auto max-w-[813px] relative z-20 ">
+                <h1
+                    class="font-bold 2xl:text-[60px] max-md:text-center max-md:text-4xl max-md:mb-[18px] max-md:leading-7 text-4xl max-[1065px]:mr-auto max-[1065px]:ml-0 text-[#3B3B3B] mb-[22px] xl:leading-[62px]">
+                    ХАРЕ КРИШНА!</h1>
+                <h2
+                    class="font-bold     2xl:text-[76px] max-md:text-center max-md:text-[28px] max-md:leading-6 text-5xl max-[1065px]:mr-auto max-[1065px]:ml-0 xl:text-6xl  gradient-text xl:leading-[85px] ml-[108px] md:mb-[9px] max-md:mb-[17px]">
+                    ВЕЛИКАЯ ПЕСНЬ</h2>
+                <h3
+                    class="font-bold 2xl:text-[48px] max-md:text-center max-md:text-[22px] max-md:leading-6 text-4xl max-[1065px]:mr-auto max-[1065px]:ml-0 gradient-text xl:leading-[85px] ml-[50px] mb max-md:mb-[385px] mb-[57px]">
+                    ОСВОБОЖДЕНИЯ!
+                </h3>
+                <p
+                    class="max-w-[608px] font-normal text-lg md:text-xl 2xl:text-2xl text-[#3B3B3B] leading-[26px] max-md:max-w-[290px] max-md:mx-auto md:leading-[35px] mb-[38px] min-[1065px]:mb-[58px]">
+                    <span class="font-semibold">Духовный учитель всего мира</span> <br>
+                    Его Божественная Милость Абхай Чаранаравинда <br>
+                    Шрила Бхактиведанта Свами Прабхупада
+                </p>
+                <a href="#"
+                    class="flex arrow_btn items-center justify-end gap-2 font-normal text-[15px] text-[#434343] leading-6">
+                    Об авторе
+                    <svg class="arrow_svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 12H20" stroke="#474747" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M14 6L20 12L14 18" stroke="#434343" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </a>
             </div>
         </div>
-        <!-- nav menu end -->
-        <!-- hero start -->
-        <section class="max-md:pl-0  ">
-            <div
-                class="max-w-[1416px] w-full mx-auto relative pt-[81px] max-md:p-0 max-md:pt-10 max-md:px-5 max-[1065px]:pl-[138px]  pr-5  pb-[54px]">
-                <div
-                    class="w-[791px] max-md:w-[375px] max-[1065px]:left-[50%] max-md:top-[139px] md:bottom-0 max-[1065px]:translate-x-[-50%]   absolute min-[1065px]:top-[-47px] min-[1065px]:left-0 bottom-0">
-                    <img src="./img/hero/krishna.png" alt="ХАРЕ КРИШНА!"
-                        class="w-[791px] object-cover block max-xl:h-[630px] max-[1065px]:hidden">
-                    <img src="./img/hero/mobile_krishna.png" alt="" class="w-[375px] object-cover hidden max-md:block">
+    </section>
+    <!-- hero end -->
+
+    <!-- nav menu start -->
+    <div
+        class="min-[1920px]:hidden max-md:hidden menu z-30 md:border-r max-md:pt-10 max-md:top-[74px] md:border-[#D9D9D9] transition-all duration-300 w-full md:max-w-[360px] fixed top-0 -left-[242px] h-screen  bg-white pl-5  md:pl-9 ">
+        <div class="flex">
+            <ul class="md:mt-[136px]  flex flex-col gap-6">
+                <li><a href="#"
+                        class="nav_link opacity_hover pl-0 transition-all duration-300 font-light text-lg text-[#3B3B3B] leading-6">Об
+                        авторе</a></li>
+                <li><a href="#"
+                        class="nav_link opacity_hover pl-0 transition-all duration-300 font-light text-lg text-[#3B3B3B] leading-6">Книги</a>
+                </li>
+                <li><a href="#"
+                        class="nav_link opacity_hover pl-0 transition-all duration-300 font-light text-lg text-[#3B3B3B] leading-6">Комплекты</a>
+                </li>
+                <li><a href="#"
+                        class="nav_link opacity_hover pl-0 transition-all duration-300 font-light text-lg text-[#3B3B3B] leading-6">Блог</a>
+                </li>
+                <li><a href="#"
+                        class="nav_link opacity_hover pl-0 transition-all duration-300 font-light text-lg text-[#3B3B3B] leading-6">Медиа</a>
+                </li>
+                <li><a href="#"
+                        class="nav_link opacity_hover pl-0 transition-all duration-300 font-light text-lg text-[#3B3B3B] leading-6">О
+                        нас</a></li>
+            </ul>
+            <div class="max-md:hidden menu_open__toogle  max-w-[118px]  w-full h-screen pt-[350px]  ml-auto">
+                <button class="mx-auto flex items-center gap-1  rotate-90">
+                    <svg class="transition-all duration-300 flex-shrink-0 -rotate-90 menu_open_btn__svg" width="24"
+                        height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.59 7.42L14.17 12L9.59 16.59L11 18L17 12L11 6L9.59 7.42Z" fill="#4F4F4F" />
+                    </svg>
+                    <span class="font-bold text-[15px] text-[#434343] rotate-180 leading-6 uppercase" style="
+                        letter-spacing: 0.01em;
+                        ">меню</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- nav menu end -->
+
+    <!-- mobile nav menu start -->
+    <div
+        class="mobile_menu  menu z-30  pt-10 top-[74px] transition-all duration-300 w-full absolute  h-screen  bg-white pl-5  md:hidden -left-[100%] ">
+        <div class="flex">
+            <ul class="md:mt-[136px]  flex flex-col gap-6">
+                <li><a href="#"
+                        class="nav_link opacity_hover pl-0 transition-all duration-300 font-light text-lg text-[#3B3B3B] leading-6">Об
+                        авторе</a></li>
+                <li><a href="#"
+                        class="nav_link opacity_hover pl-0 transition-all duration-300 font-light text-lg text-[#3B3B3B] leading-6">Книги</a>
+                </li>
+                <li><a href="#"
+                        class="nav_link opacity_hover pl-0 transition-all duration-300 font-light text-lg text-[#3B3B3B] leading-6">Комплекты</a>
+                </li>
+                <li><a href="#"
+                        class="nav_link opacity_hover pl-0 transition-all duration-300 font-light text-lg text-[#3B3B3B] leading-6">Блог</a>
+                </li>
+                <li><a href="#"
+                        class="nav_link opacity_hover pl-0 transition-all duration-300 font-light text-lg text-[#3B3B3B] leading-6">Медиа</a>
+                </li>
+                <li><a href="#"
+                        class="nav_link opacity_hover pl-0 transition-all duration-300 font-light text-lg text-[#3B3B3B] leading-6">О
+                        нас</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- mobile nav menu end -->
+
+    <!-- about start -->
+    <section class="pb-[110px] max-md:pb-[50px] max-md:pl-0 max-2xl:pl-[118px] pt-[34px] max-md:pt-[38px] ">
+        <div class="max-w-[1240px] mx-auto flex max-md:flex-col-reverse justify-between gap-5 md:px-5">
+            <div class="bg-[#F8F8F8] max-w-[756px] pt-[114px] max-md:pt-9 max-md:pb-14 max-md:px-[42px]">
+                <p
+                    class="font-light text-lg xl:text-2xl text-[#3B3B3B] leading-[26px] xl:leading-[39px] mb-9 md:mb-[55px]">
+                    Моя миссия заключается в проповеди философии Господа Чайтаньи, в повторении: <span
+                        class="font-semibold">
+                        «Харе Кришна Харе Кришна, Кришна Кришна Харе Харе / Харе Рама Харе Рама, Рама Рама Харе
+                        Харе»
+                    </span> этот трансцендентный
+                    звук очистит ум от всякой скверны не важно кем бы человек не был, этот трансцендентный звук
+                    одинаково подходит каждому независимо от языка, национальности, вероисповедания и касты,
+                    поскольку этот звук исходит из глубины души.
+                </p>
+                <i class="block max-w-[183px] text-right font-normal text-[15px] text-[#3B3B3B] w-full ml-auto">Любовь
+                    к Богу — высшее благо для всех людей</i>
+            </div>
+            <div class="md:w-[365px] max-md:w-full">
+                <div class="xl:max-w-[365px] md:w-[365px] max-md:w-full  xl:w-full flex">
+                    <img src="./img/about/love.png" alt="Что не является любовью?"
+                        class="max-md:h-[390px] w-full object-cover">
                 </div>
-                <div class="pl-[500px] xl:pl-[600px] max-[1065px]:pl-0  relative z-20">
-                    <h1
-                        class="font-bold 2xl:text-[60px] max-md:text-center max-md:text-4xl max-md:mb-[18px] max-md:leading-7 text-4xl max-[1065px]:mr-auto max-[1065px]:ml-0 text-[#3B3B3B] mb-[22px] xl:leading-[62px]">
-                        ХАРЕ КРИШНА!</h1>
-                    <h2
-                        class="font-bold 2xl:text-[76px] max-md:text-center max-md:text-[28px] max-md:leading-6 text-5xl max-[1065px]:mr-auto max-[1065px]:ml-0 xl:text-6xl  gradient-text xl:leading-[85px] ml-[108px] md:mb-[9px] max-md:mb-[17px]">
-                        ВЕЛИКАЯ ПЕСНЬ</h2>
-                    <h3
-                        class="font-bold 2xl:text-[48px] max-md:text-center max-md:text-[22px] max-md:leading-6 text-4xl max-[1065px]:mr-auto max-[1065px]:ml-0 gradient-text xl:leading-[85px] ml-[50px] mb max-md:mb-[385px] mb-[57px]">
-                        ОСВОБОЖДЕНИЯ!
-                    </h3>
-                    <p
-                        class="max-w-[608px] font-normal text-lg md:text-xl 2xl:text-2xl text-[#3B3B3B] leading-[26px] max-md:max-w-[290px] max-md:mx-auto md:leading-[35px] mb-[38px] min-[1065px]:mb-[58px]">
-                        <span class="font-semibold">Духовный учитель всего мира</span> <br>
-                        Его Божественная Милость Абхай Чаранаравинда <br>
-                        Шрила Бхактиведанта Свами Прабхупада
-                    </p>
+                <h2
+                    class="bg-[#3B3B3B] font-bold text-[40px] text-white leading-[54px] pt-[33px] pb-[34px] pl-6 pr-[37px]">
+                    Что <br> не является любовью?</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="pb-[162px] max-md:pb-[56px] max-md:pl-0 max-2xl:pl-[118px]">
+        <div
+            class="max-w-[1240px] mx-auto flex max-[1160px]:flex-col justify-between max-md:gap-9 gap-5 px-[42px] md:px-5">
+            <div class="min-[1160px]:max-w-[355px] w-full">
+                <h1 class="title mb-[17px] md:mb-3">Шримад - бхагаватам</h1>
+                <i class="block font-normal text-sm md:text-[15px] text-[#B4B4B4] mb-[21px]">Песень 2, глава 2,
+                    2.2.37</i>
+                <p class="font-normal text-lg md:text-2xl text-[#3B3B3B] leading-[26px] md:leading-[35px]">
+                    Те, кто упивается нектарным посланием Господа Кришны, возлюбленного преданных,
+                    освобождаются от порочных представлений о том, что целью жизни являются материальные
+                    наслаждения, и возвращаются обратно к <br> Богу, к Его [Верховного <br> Господа] лотосным
+                    стопам.
+                </p>
+            </div>
+            <div class="max-w-[729px]">
+                <i
+                    class="max-w-[287px] md:max-w-[528px] block font-normal text-sm md:text-2xl text-[#3B3B3B] leading-[26px] md:leading-[35px] mb-[17px] md:mb-[33px]">
+                    пибанти йе бхагавата а̄тманах̣ сата̄м̇
+                    катха̄мр̣там̇ ш́раван̣а-пут̣ешу самбхр̣там
+                    пунанти те вишайа-видӯшита̄ш́айам̇
+                    враджанти тач-чаран̣а-сароруха̄нтикам
+                </i>
+                <i class="block font-normal text-sm md:text-[15px] text-[#B4B4B4] mb-[23px] md:mb-[43px]">Пословный
+                    перевод</i>
+                <i
+                    class="block border-l-2 border-[#E122F9] font-normal text-sm md:text-[15px] text-[#B4B4B4] leading-[23px] pl-[18px] md:pl-12 mb-4 md:mb-[53px]">
+                    Пибанти — пьют; йе — которые; бхагаватах̣ — Личности Бога; а̄тманах̣— самого близкого; сата̄м —
+                    для преданных; <br>
+                    катха̄- амр̣там — нектар посланий; ш́раван̣а-пут̣ешу — в ушах; самбхр̣там — наполненных; пунанти
+                    — очищают; те — их; <br>
+                    вишайа — материальным наслаждением; видӯшита-а̄ш́айам — оскверненные <br> представления о цели
+                    жизни; <br>
+                    враджанти — отправляются обратно; тат — Господа; чаран̣а — стоп; сароруха-антикам — возле
+                    лотоса.
+                </i>
+                <div class="flex max-md:flex-col max-md:gap-y-[30px] md:items-center justify-between gap-5">
+                    <a href="#" class="font-normal text-sm md:text-[15px] text-[#5C90DE] leading-[35px]">Перейти к
+                        товару</a>
                     <a href="#"
-                        class="flex arrow_btn items-center justify-end gap-2 font-normal text-[15px] text-[#434343] leading-6">
-                        Об авторе
-                        <svg class="arrow_svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4 12H20" stroke="#474747" stroke-width="2" stroke-linecap="round"
+                        class="arrow_btn  inline-flex items-center gap-x-3 md:gap-x-2.5 max-md:bg-[#ECECEC] max-md:rounded-[3px] max-md:py-1.5 max-md:px-[25px] ">
+                        <span class="font-normal text-base md:text-[15px] text-[#3B3B3B] leading-[35px]">показать
+                            следующий стих</span>
+                        <svg class="arrow_svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 12H20" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" />
-                            <path d="M14 6L20 12L14 18" stroke="#434343" stroke-width="2" stroke-linecap="round"
+                            <path d="M14 6L20 12L14 18" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" />
                         </svg>
                     </a>
                 </div>
             </div>
-        </section>
-        <!-- hero end -->
-        <!-- about start -->
-        <section class="pb-[110px] max-md:pb-[50px] max-md:pl-0 max-2xl:pl-[118px] pt-[34px] max-md:pt-[38px] ">
-            <div class="max-w-[1240px] ml-auto flex max-md:flex-col-reverse justify-between gap-5 px-5">
-                <div class="bg-[#F8F8F8] max-w-[756px] pt-[114px] max-md:pt-9 max-md:pb-14 max-md:px-[42px]">
-                    <p
-                        class="font-light text-lg xl:text-2xl text-[#3B3B3B] leading-[26px] xl:leading-[39px] mb-9 md:mb-[55px]">
-                        Моя миссия заключается в проповеди философии Господа Чайтаньи, в повторении: <span
-                            class="font-semibold">
-                            «Харе Кришна Харе Кришна, Кришна Кришна Харе Харе / Харе Рама Харе Рама, Рама Рама Харе
-                            Харе»
-                        </span> этот трансцендентный
-                        звук очистит ум от всякой скверны не важно кем бы человек не был, этот трансцендентный звук
-                        одинаково подходит каждому независимо от языка, национальности, вероисповедания и касты,
-                        поскольку этот звук исходит из глубины души.
-                    </p>
-                    <i class="block max-w-[183px] text-right font-normal text-[15px] text-[#3B3B3B] w-full ml-auto">Любовь
-                        к Богу — высшее благо для всех людей</i>
-                </div>
-                <div class="md:w-[365px] max-md:w-full">
-                    <div class="xl:max-w-[365px] md:w-[365px] max-md:w-full  xl:w-full flex">
-                        <img src="./img/about/love.png" alt="Что не является любовью?"
-                            class="max-md:h-[390px] w-full object-cover">
+        </div>
+    </section>
+
+    <section class=" max-md:pl-0 max-2xl:pl-[118px] pb-[111px] max-md:pb-14">
+        <div class="max-w-[1240px] w-full mx-auto  md:px-5 ">
+            <div class="bg-[#F8F8F8] max-md:pt-14 max-md:pb-[71px] max-md:px-[42px] max-md:mb-14">
+                <h1 class="title mb-6">КТО МЫ?</h1>
+                <p class="font-semibold max-md:font-normal max-md:leading-[26px] text-xl text-[#3B3B3B] md:mb-[105px]">
+                    Идейные соображения высшего порядка, а также высокотехнологичная концепция общественного уклада,
+                    в своём классическом представлении, допускает внедрение поставленных обществом задач. Каждый из
+                    нас понимает очевидную вещь: понимание сути ресурсосберегающих технологий, а также свежий взгляд
+                    на привычные вещи — безусловно открывает новые горизонты для форм воздействия.
+                </p>
+            </div>
+            <div
+                class="max-md:max-w-[991px] max-md:[42px] w-full flex max-lg:flex-col lg:items-center justify-between gap-8 lg:gap-5 mb-9 max-md:px-[42px]">
+                <div class="flex items-center max-md:justify-center gap-x-[18px] md:gap-x-9 px-2">
+                    <div class="max-w-[84px] max-md:max-w-[49px] rounded-[10px] overflow-hidden w-full opacity-[48%]">
+                        <img src="./img/about/left.png" alt="book image" class="w-full object-cover">
                     </div>
+                    <div class="max-w-[231px] max-md:max-w-[140px] rounded-md overflow-hidden w-full"><img
+                            src="./img/about/big.png" alt="book image" class="w-full object-cover"></div>
+                    <div class="max-w-[84px] max-md:max-w-[49px] rounded-[10px] overflow-hidden w-full opacity-[48%]">
+                        <img src="./img/about/right.png" alt="book image" class="w-full object-cover">
+                    </div>
+                </div>
+                <div class="max-w-[451px]">
                     <h2
-                        class="bg-[#3B3B3B] font-bold text-[40px] text-white leading-[54px] pt-[33px] pb-[34px] pl-6 pr-[37px]">
-                        Что <br> не является любовью?</h2>
-                </div>
-            </div>
-        </section>
-
-        <section class="pb-[162px] max-md:pb-[56px] max-md:pl-0 max-2xl:pl-[118px]">
-            <div class="max-w-[1240px] ml-auto flex justify-between  px-5">
-                <div class="max-w-[355px] w-full">
-                    <h1 class="font-bold text-[40px] leading-[50px] text-[#3B3B3B] mb-3">Шримад - бхагаватам</h1>
-                    <i class="block font-normal text-[15px] text-[#828080] mb-[21px]">Песень 2, глава 2, 2.2.37</i>
-                    <p class="font-normal text-2xl text-[#3B3B3B] leading-[35px]">
-                        Те, кто упивается нектарным посланием Господа Кришны, возлюбленного преданных,
-                        освобождаются от порочных представлений о том, что целью жизни являются материальные
-                        наслаждения, и возвращаются обратно к <br> Богу, к Его [Верховного <br> Господа] лотосным стопам.
-                    </p>
-                </div>
-                <div class="max-w-[729px]">
-                    <i class="max-w-[528px] block font-normal text-2xl text-[#3B3B3B] leading-[35px] mb-[33px]">
-                        пибанти йе бхагавата а̄тманах̣ сата̄м̇
-                        катха̄мр̣там̇ ш́раван̣а-пут̣ешу самбхр̣там
-                        пунанти те вишайа-видӯшита̄ш́айам̇
-                        враджанти тач-чаран̣а-сароруха̄нтикам
-                    </i>
-                    <i class="block font-normal text-[15px] text-[#828080] mb-[43px]">Пословный перевод</i>
-                    <i class="block border-l-2 border-[#E122F9] font-normal text-[15px] text-[#828080] leading-[23px] pl-12 mb-[53px]">
-                        Пибанти — пьют; йе — которые; бхагаватах̣ — Личности Бога; а̄тманах̣— самого близкого; сата̄м —
-                        для преданных; <br>
-                        катха̄- амр̣там — нектар посланий; ш́раван̣а-пут̣ешу — в ушах; самбхр̣там — наполненных; пунанти
-                        — очищают; те — их; <br>
-                        вишайа — материальным наслаждением; видӯшита-а̄ш́айам — оскверненные <br> представления о цели жизни; <br>
-                        враджанти — отправляются обратно; тат — Господа; чаран̣а — стоп; сароруха-антикам — возле
-                        лотоса.
-                    </i>
-                    <div class="flex items-center justify-between gap-5">
-                        <a href="#" class="font-normal text-[15px] text-[#5C90DE] leading-[35px]">Перейти к товару</a>
-                        <a href="#" class="flex items-center gap-x-2.5">
-                            <span class="font-normal text-[15px] text-[#3B3B3B] leading-[35px]">показать следующий стих</span>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4 12H20" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M14 6L20 12L14 18" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </a>
+                        class="font-semibold  text-2xl md:text-[40px] text-[#3B3B3B] leading-[30px] md:leading-[50px] mb-6">
+                        Шри Намамрита: <br> нектар
+                        святого имени</h2>
+                    <p class="font-normal text-lg md:text-xl text-[#3B3B3B] mb-14">Его божественная Милость <br> А.
+                        Ч.
+                        Бхактиведанта Свами Прабхупада</p>
+                    <div class="flex md:items-center max-md:flex-col-reverse gap-9 md:gap-6">
+                        <a href="#"
+                            class="magazine_link max-w-[222px] w-full flex items-center justify-center rounded-[3px] font-semibold text-[15px] text-white opacity_hover py-3 px-5"
+                            style="
+                            background: linear-gradient(82.09deg, #E122F9 -1.27%, #2B1EDD 69.03%);
+                            box-shadow: 0px 5px 30px 0px #00000012;
+                                ">перейти в магазин</a>
+                        <p class="font-semibold text-4xl text-[#3B3B3B]">450 р.</p>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- about end -->
+            <div class="flex justify-center gap-2 mb-6 md:hidden max-md:px-[42px]">
+                <span class="w-[11px] h-[11px] rounded-full bg-[#828080]"></span>
+                <span class="w-[11px] h-[11px] rounded-full bg-[#828080]"></span>
+                <span class="w-[11px] h-[11px] rounded-full bg-[#828080]"></span>
+                <span class="w-[11px] h-[11px] rounded-full bg-[#828080]"></span>
+                <span class="w-[11px] h-[11px] rounded-full bg-[#828080]"></span>
+                <span class="w-[11px] h-[11px] rounded-full bg-[#828080]"></span>
+            </div>
+            <p
+                class="font-normal text-lg max-md:leading-[26px] md:text-xl text-[#3B3B3B] leading-[35px] mb-[30px] max-md:px-[42px]">
+                Приходом кали-юги, эпохи воин и раздоров, память у людей стала ухудшаться, поэтому они были записаны
+                великим мудрецом Шрилой Вьясадевой, "литературным воплощением Бога". Он собрал выводы всех Вед, вот
+                почему «Шримад-Бхагаватам» считают «сливками» Ведической философии. Вы погрузитесь в атмосферу
+                древней ведической цивилизации. Махараджа Парикшит, узнав, что ему осталось жить всего семь дней
+                внимательно слушал "Шримад бхагаватам" и обрёл "освобождение". Если мы так же будем внимательно
+                слушать и читать "Шримад Бхагаватам", то тоже станем достойны войти в Духовный мир, и получим
+                возможность навсегда положить конец страданиям этого бренного тела в виде старости, болезней, смерти
+                и нового рождения..
+            </p>
+            <div class="flex items-center justify-between max-md:px-[42px]">
+                <div class="flex gap-2 max-md:hidden">
+                    <span class="w-[11px] h-[11px] rounded-full bg-[#828080]"></span>
+                    <span class="w-[11px] h-[11px] rounded-full bg-[#828080]"></span>
+                    <span class="w-[11px] h-[11px] rounded-full bg-[#828080]"></span>
+                    <span class="w-[11px] h-[11px] rounded-full bg-[#828080]"></span>
+                    <span class="w-[11px] h-[11px] rounded-full bg-[#828080]"></span>
+                    <span class="w-[11px] h-[11px] rounded-full bg-[#828080]"></span>
+                </div>
+                <i
+                    class="font-normal text-right max-md:max-w-[142px] max-md:ml-auto text-sm md:text-[15px] text-[#3B3B3B]">Бхактиведанта
+                    Свами Прабхупада</i>
+            </div>
+        </div>
+    </section>
+    <!-- about end -->
 
-    </div>
+    <!-- book start -->
+    <section class="pb-[81px] md:pb-[142px] flex-shrink-0 max-md:pl-0 max-[1656px]:pl-[118px]">
+        <div class=" max-w-[1920px] w-full mx-auto">
+            <div class="flex max-lg:flex-col items-center w-full">
+                <div class="max-w-[960px] w-full flex lg:h-[546px] max-md:h-[208px]">
+                    <img src="./img/about/book_1.png" alt="book images" class="w-full object-cover">
+                </div>
+                <div class="px-[42px] lg:pl-[66px] bg-[#F8F8F8] pt-9 pb-[56px] lg:py-[76px] max-w-[960px] w-full">
+                    <h2
+                        class="lg:max-w-[304px] font-semibold md:font-bold text-2xl md:text-[36px] leading-[30px] md:leading-[54px] mb-6 md:mb-[26px] text-[#3B3B3B] ">
+                        ШРИ ЧАЙТАНЬЯ ЧАРИТАМРИТА</h2>
+                    <p
+                        class="font-normal text-lg md:text-xl text-[#3B3B3B] leading-7 md:leading-[35px] lg:max-w-[434px] mb-6 md:mb-[71px]">
+                        Аспирантура духовной жизни Шри Чайтанья Чаритамрита повествует о жизни Шри Чайтаньи Махапрабху,
+                        жившего в Индии около 500 лет назад, религиозного..
+                    </p>
+                    <div class="flex max-md:flex-col-reverse md:items-center gap-9 md:gap-6 ">
+                        <a href="#"
+                            class="lg:max-w-[222px] opacity_hover w-full flex justify-center rounded-[3px] bg-[#EBEBEB] font-semibold text-[15px] py-3 px-5 leading-6">Подробнее</a>
+                        <p class="font-semibold text-4xl text-[#3B3B3B] leading-[50px] md:leading-[48px]">3365 р.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row-reverse max-lg:flex-col items-center w-full mb-6 md:mb-[86px]">
+                <div class="max-w-[960px] w-full flex lg:h-[546px] max-md:h-[208px]">
+                    <img src="./img/about/book_2.png" alt="book images" class="w-full object-cover">
+                </div>
+                <div class="px-[42px] lg:pl-[66px] bg-[#F8F8F8] pt-9 pb-[56px] lg:py-[76px] max-w-[960px] w-full">
+                    <h2
+                        class="lg:max-w-[304px] lg:ml-auto lg:text-right font-semibold md:font-bold text-2xl md:text-[36px] leading-[30px] md:leading-[54px] mb-6 md:mb-[26px] text-[#3B3B3B] ">
+                        Шримад Бхагаватам</h2>
+                    <p
+                        class="font-normal text-lg lg:ml-auto lg:text-right md:text-xl text-[#3B3B3B] leading-7 md:leading-[35px] lg:max-w-[434px] mb-6 md:mb-[71px]">
+                        Перед Вами представлен весь комплект книг Шримад Бхагаватам, переведённый на русский язык,
+                        состоящий из 26 томов, с 1 по 12 песнь. Изначально знан..
+                    </p>
+                    <div
+                        class="flex max-md:flex-col-reverse lg:ml-auto lg:flex-row-reverse md:items-center gap-9 md:gap-6 ">
+                        <a href="#"
+                            class="lg:max-w-[222px] opacity_hover w-full flex justify-center rounded-[3px] bg-[#EBEBEB] font-semibold text-[15px] py-3 px-5 leading-6">Подробнее</a>
+                        <p class="font-semibold text-4xl text-[#3B3B3B] leading-[50px] md:leading-[48px]">6555 р.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="max-md:px-[42px]">
+                <a href="#"
+                    class="md:max-w-[426px] w-full flex  justify-center font-semibold text-[15px] opacity_hover text-white leading-6 rounded-[3px] md:mx-auto py-3 px-5"
+                    style="
+            background: linear-gradient(82.09deg, #E122F9 -1.27%, #2B1EDD 69.03%);
+            box-shadow: 0px 5px 30px 0px #00000012;
+            ">Все комплекты книг</a>
+            </div>
+        </div>
+    </section>
+    <!-- book end -->
+
+    <!-- video start -->
+    <section class="pb-[27px] max-md:pb-[3px] max-md:pl-0 max-2xl:pl-[118px]">
+        <div class="max-w-[1171px] w-full mx-auto flex max-lg:flex-col gap-9 px-[42px] md:px-5">
+            <div class="max-w-[888px] w-full">
+                <div
+                    class="grid grid-cols-1 max-w-[888px] max-[375px]:h-[161px] max-sm:h-[300px] h-[360px] md:h-[492px] w-full mb-[30px] md:mb-6">
+                    <iframe class="big_video w-full h-full"
+                        src="https://www.youtube.com/embed/EMmsl557FF0?si=BQHPPsmUEoYQwKbJ" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="flex md:items-center justify-between max-md:flex-col max-md:gap-1.5 mb-2">
+                    <h2 class="font-normal text-lg md:text-xl text-[#434343]">Шримад Бхагаватам Песень 2, глава 2,
+                        2.2.37</h2>
+                    <i class="font-normal md:hidden leading-[25px] text-[15px] text-[#828080]">279 964 просмотра • 20
+                        авг. 2023 г</i>
+                    <a href="#"
+                        class="max-md:hidden linear_default_gradiend text-white font-semibold text-[15px] px-5 py-1.5 max-w-[164px] w-full flex justify-center rounded-[3px]">Нравится</a>
+                </div>
+                <div class="flex items-center justify-between gap-2.5">
+                    <i class="font-normal max-md:hidden text-[15px] text-[#828080]">279 964 просмотра • 20 авг. 2023
+                        г</i>
+                    <a href="#"
+                        class="bg-[#ECECEC] text-white font-semibold text-[15px] px-5 py-1.5 max-w-[202px] w-full flex justify-center rounded-[3px]">Нравится</a>
+                    <i class="font-normal text-sm min-w-[78px] md:text-[15px] text-[#828080]">324 лайка</i>
+                </div>
+            </div>
+            <div class="lg:max-w-[247px] w-full max-h-[633px]  relative">
+                <div
+                    class="flex flex-col gap-2 md:gap-6 max-h-[290px] md:max-h-[493px] overflow-y-auto custom-scrollbar">
+                    <div
+                        class="mini_video_card cursor-pointer lg:max-w-[222px] gap-2.5 max-lg:flex items-center w-full relative">
+                        <div class="max-w-[140px] lg:max-w-[222px] h-[78px] md:h-[126px] absolute top-0 left-0"></div>
+                        <div class="grid grid-cols-1 max-w-[140px] lg:max-w-[222px] relative -z-10 w-full mb-2.5">
+                            <iframe class="mini_video w-full h-[78px] lg:h-[126px]"
+                                src="https://www.youtube.com/embed/6Vh19PF_lt0?si=lEemXJ2vqVZmrROo"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div>
+                            <h3
+                                class="max-w-[136px] font-normal text-sm md:text-xs text-[#434343] leading-[17px] max-md:mb-1.5">
+                                Шримад
+                                Бхагаватам Песень 3, глава 3, 2.2..</h3>
+                            <i class="font-normal text-[10px] text-[#B4B4B4] md:leading-6">Шримад Бхагаватам</i>
+                        </div>
+                    </div>
+                    <div
+                        class="mini_video_card cursor-pointer lg:max-w-[222px] gap-2.5 max-lg:flex items-center w-full relative">
+                        <div class="max-w-[140px] lg:max-w-[222px] h-[78px] md:h-[126px] absolute top-0 left-0"></div>
+                        <div class="grid grid-cols-1 max-w-[140px] lg:max-w-[222px] relative -z-10 w-full mb-2.5">
+                            <iframe class="mini_video w-full h-[78px] lg:h-[126px]"
+                                src="https://www.youtube.com/embed/6Vh19PF_lt0?si=lEemXJ2vqVZmrROo"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div>
+                            <h3
+                                class="max-w-[136px] font-normal text-sm md:text-xs text-[#434343] leading-[17px] max-md:mb-1.5">
+                                Шримад
+                                Бхагаватам Песень 3, глава 3, 2.2..</h3>
+                            <i class="font-normal text-[10px] text-[#B4B4B4] md:leading-6">Шримад Бхагаватам</i>
+                        </div>
+                    </div>
+                    <div
+                        class="mini_video_card cursor-pointer lg:max-w-[222px] gap-2.5 max-lg:flex items-center w-full relative">
+                        <div class="max-w-[140px] lg:max-w-[222px] h-[78px] md:h-[126px] absolute top-0 left-0"></div>
+                        <div class="grid grid-cols-1 max-w-[140px] lg:max-w-[222px] relative -z-10 w-full mb-2.5">
+                            <iframe class="mini_video w-full h-[78px] lg:h-[126px]"
+                                src="https://www.youtube.com/embed/6Vh19PF_lt0?si=lEemXJ2vqVZmrROo"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div>
+                            <h3
+                                class="max-w-[136px] font-normal text-sm md:text-xs text-[#434343] leading-[17px] max-md:mb-1.5">
+                                Шримад
+                                Бхагаватам Песень 3, глава 3, 2.2..</h3>
+                            <i class="font-normal text-[10px] text-[#B4B4B4] md:leading-6">Шримад Бхагаватам</i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:max-w-[222px] w-full absolute bottom-0 left-0 h-[78px] md:h-[195px]"
+                    style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.17) 0.52%, rgba(255, 255, 255, 0.44) 20.21%, #FFFFFF 49.48%, #FFFFFF 100%);">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- video end -->
+
+    <!-- audio start -->
+    <section
+        class="bg-[#F8F8F8] relative max-md:pl-0 max-2xl:pl-[118px] pb-[76px] pt-[79px] max-md:border-t border-[#ECECEC] md:pt-24">
+        <div
+            class="absolute md:top-[50%]  left-[50%] translate-x-[-50%] top-[22px] md:translate-y-[-50%] pl-[101px] pr-[109px]">
+            <span class="max-md:hidden">
+                <svg width="1710" height="278" viewBox="0 0 1710 278" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M241.978 6.18637C241.978 21.0079 241.464 43.369 240.439 73.2698C239.413 103.171 238.9 125.596 238.9 140.547C238.9 154.595 239.028 175.667 239.285 203.764C239.541 231.731 239.669 252.739 239.669 266.787C239.669 271.04 238.066 273.167 234.86 273.167C232.937 273.167 230.052 272.974 226.205 272.587C222.358 272.2 219.472 272.007 217.549 272.007C215.497 272.007 212.356 272.2 208.124 272.587C203.892 272.974 200.75 273.167 198.699 273.167C196.39 273.167 193.633 271.04 190.427 266.787C162.729 229.282 120.732 173.347 64.4375 98.9819C55.7176 87.6402 50.6524 81.325 49.2419 80.0362C47.9595 80.0362 47.3183 82.6783 47.3183 87.9625C47.3183 107.81 47.639 137.647 48.2801 177.471C48.9213 217.167 49.2419 246.939 49.2419 266.787C49.2419 271.04 47.9595 273.167 45.3948 273.167C43.2148 273.167 39.8808 272.974 35.3926 272.587C30.9044 272.2 27.5703 272.007 25.3903 272.007C23.0821 272.007 19.6197 272.2 15.0033 272.587C10.5151 272.974 7.11693 273.167 4.80872 273.167C1.60287 273.167 0 271.878 0 269.3C0 255.123 0.64116 233.793 1.9235 205.31C3.33407 176.698 4.03938 155.239 4.03938 140.933C4.03938 125.338 3.46231 97.242 2.3082 56.644C2.05173 46.0756 1.41057 30.223 0.3847 9.08623L0.192317 6.57302C0.0640834 4.63978 1.60287 3.60872 4.80872 3.47984C13.1439 3.35095 19.6839 3.09318 24.4285 2.70653C26.2238 2.57765 29.6221 2.06212 34.6232 1.15994C38.8549 0.386644 42.189 0 44.6255 0C45.7796 0 47.7672 1.86879 50.5883 5.60639C80.0822 46.3333 125.221 106.908 186.003 187.331C188.696 190.682 191.197 193.582 193.505 196.031C194.403 190.618 194.852 178.245 194.852 158.912C194.852 142.158 194.21 117.025 192.928 83.516C191.774 50.0065 191.197 24.9388 191.197 8.31294C191.197 4.05981 192.479 1.93324 195.044 1.93324C197.352 1.93324 200.814 2.12656 205.431 2.51321C210.176 2.89986 213.702 3.09318 216.01 3.09318C218.447 3.09318 222.101 2.89986 226.974 2.51321C231.847 2.12656 235.502 1.93324 237.938 1.93324C240.631 1.93324 241.978 3.35095 241.978 6.18637Z"
+                        fill="black" fill-opacity="0.02" />
+                    <path
+                        d="M469.336 98.2086C469.336 98.7242 469.144 99.8841 468.759 101.688C463.758 131.203 461.257 156.657 461.257 178.051C461.257 179.34 462.861 208.274 466.066 264.854L466.259 267.56C466.387 271.298 464.656 273.167 461.065 273.167C457.603 273.167 452.281 273.554 445.1 274.327C438.047 275.229 432.79 275.68 429.327 275.68C426.891 275.68 425.031 271.169 423.749 262.147C422.467 253.126 421.248 248.615 420.094 248.615C419.325 248.615 415.863 251.128 409.708 256.154C402.142 262.341 395.089 267.045 388.549 270.267C378.418 275.422 368.288 278 358.157 278C333.28 278 312.314 268.012 295.259 248.035C279.101 228.96 271.022 206.728 271.022 181.338C271.022 152.726 279.165 129.076 295.451 110.388C312.506 90.9268 334.947 81.1961 362.774 81.1961C382.394 81.1961 399.513 88.0269 414.132 101.688C416.312 104.266 419.71 108.004 424.326 112.901C424.711 113.288 425.096 113.481 425.48 113.481C426.25 113.481 427.34 109.421 428.75 101.302C430.161 93.1822 431.956 89.1224 434.136 89.1224C437.598 89.1224 444.074 90.089 453.564 92.0222C464.079 94.3421 469.336 96.4043 469.336 98.2086ZM420.287 179.018C420.287 163.166 415.606 149.568 406.245 138.227C396.371 125.983 383.74 119.861 368.352 119.861C352.964 119.861 340.141 125.918 329.882 138.033C320.008 149.633 315.071 163.294 315.071 179.018C315.071 194.613 320.008 208.146 329.882 219.616C340.141 231.602 352.964 237.595 368.352 237.595C383.355 237.595 395.922 231.473 406.053 219.229C415.542 207.759 420.287 194.355 420.287 179.018Z"
+                        fill="black" fill-opacity="0.02" />
+                    <path
+                        d="M793.255 266.014C793.255 271.04 791.781 273.554 788.831 273.554C786.908 273.554 783.958 273.36 779.983 272.974C776.136 272.587 773.187 272.394 771.135 272.394C768.955 272.394 765.685 272.522 761.325 272.78C756.965 273.038 753.695 273.167 751.515 273.167C748.822 273.167 747.476 270.138 747.476 264.081C747.476 258.152 747.668 249.324 748.053 237.595C748.566 225.738 748.822 216.845 748.822 210.917C748.822 178.309 748.694 160.137 748.438 156.399C747.412 143.124 744.719 133.974 740.359 128.947C735.358 123.534 726.445 120.828 713.622 120.828C705.543 120.828 696.439 124.694 686.308 132.427C675.793 140.547 670.343 148.537 669.958 156.399C669.445 166.452 669.189 184.818 669.189 211.497C669.189 217.812 669.445 227.285 669.958 239.915C670.471 252.546 670.728 262.019 670.728 268.334C670.728 271.814 669.574 273.554 667.265 273.554C664.957 273.554 661.559 273.36 657.071 272.974C652.711 272.587 649.377 272.394 647.069 272.394C645.017 272.394 642.003 272.522 638.028 272.78C634.053 273.038 631.039 273.167 628.988 273.167C626.423 273.167 625.141 271.298 625.141 267.56C625.141 261.374 625.333 252.095 625.718 239.722C626.102 227.22 626.295 217.876 626.295 211.69V165.099C626.295 150.535 624.564 140.16 621.101 133.974C616.228 125.21 606.931 120.828 593.21 120.828C585.132 120.828 575.514 124.243 564.358 131.074C552.047 138.549 545.892 146.089 545.892 153.693V210.143C545.892 216.587 545.956 226.189 546.084 238.949C546.213 251.708 546.277 261.245 546.277 267.56C546.277 271.298 544.802 273.167 541.853 273.167H506.075C503.511 273.167 502.228 271.427 502.228 267.947C502.228 257.508 502.292 241.848 502.421 220.969C502.549 199.962 502.613 184.238 502.613 173.798C502.613 150.213 500.112 126.692 495.111 103.235C494.727 101.56 494.534 100.206 494.534 99.1752C494.534 97.4998 495.111 96.5331 496.265 96.2754C501.01 95.7599 507.935 94.7932 517.039 93.3755C521.271 92.0867 527.619 90.669 536.082 89.1224L537.621 88.9291C539.16 88.9291 540.57 93.5044 541.853 102.655C543.263 111.677 544.482 116.188 545.507 116.188C545.507 116.188 548.713 113.352 555.125 107.682C562.691 101.108 570.256 95.8887 577.822 92.0222C588.722 86.3514 599.622 83.516 610.522 83.516C640.016 83.516 658.802 95.631 666.881 119.861C674.831 109.55 684.705 101.044 696.503 94.3421C709.07 87.1247 721.508 83.516 733.819 83.516C757.542 83.516 773.956 90.4757 783.061 104.395C789.601 114.706 792.871 131.009 792.871 153.306C792.871 157.559 792.742 164.132 792.486 173.025C792.229 181.918 792.101 188.491 792.101 192.744C792.101 200.864 792.294 213.108 792.678 229.476C793.063 245.715 793.255 257.894 793.255 266.014Z"
+                        fill="black" fill-opacity="0.02" />
+                    <path
+                        d="M1018.31 98.2086C1018.31 98.7242 1018.11 99.8841 1017.73 101.688C1012.73 131.203 1010.23 156.657 1010.23 178.051C1010.23 179.34 1011.83 208.274 1015.04 264.854L1015.23 267.56C1015.36 271.298 1013.63 273.167 1010.03 273.167C1006.57 273.167 1001.25 273.554 994.07 274.327C987.017 275.229 981.759 275.68 978.297 275.68C975.861 275.68 974.001 271.169 972.719 262.147C971.436 253.126 970.218 248.615 969.064 248.615C968.295 248.615 964.832 251.128 958.677 256.154C951.111 262.341 944.058 267.045 937.519 270.267C927.388 275.422 917.258 278 907.127 278C882.25 278 861.283 268.012 844.228 248.035C828.071 228.96 819.992 206.728 819.992 181.338C819.992 152.726 828.135 129.076 844.421 110.388C861.476 90.9268 883.917 81.1961 911.744 81.1961C931.363 81.1961 948.483 88.0269 963.101 101.688C965.281 104.266 968.679 108.004 973.296 112.901C973.68 113.288 974.065 113.481 974.45 113.481C975.219 113.481 976.309 109.421 977.72 101.302C979.131 93.1822 980.926 89.1224 983.106 89.1224C986.568 89.1224 993.044 90.089 1002.53 92.0222C1013.05 94.3421 1018.31 96.4043 1018.31 98.2086ZM969.257 179.018C969.257 163.166 964.576 149.568 955.215 138.227C945.341 125.983 932.71 119.861 917.322 119.861C901.934 119.861 889.11 125.918 878.852 138.033C868.977 149.633 864.04 163.294 864.04 179.018C864.04 194.613 868.977 208.146 878.852 219.616C889.11 231.602 901.934 237.595 917.322 237.595C932.325 237.595 944.892 231.473 955.023 219.229C964.512 207.759 969.257 194.355 969.257 179.018Z"
+                        fill="black" fill-opacity="0.02" />
+                    <path
+                        d="M1258.17 271.62C1258.17 272.651 1257.14 273.167 1255.09 273.167C1252.65 273.167 1248.93 272.974 1243.93 272.587C1238.93 272.2 1235.21 272.007 1232.78 272.007C1230.08 272.007 1226.04 272.2 1220.66 272.587C1215.4 272.974 1211.43 273.167 1208.73 273.167C1205.78 273.167 1203.54 271.556 1202 268.334C1197.9 259.57 1186.23 232.44 1166.99 186.944C1165.07 182.305 1160.39 179.469 1152.95 178.438C1151.28 178.309 1145.45 178.245 1135.45 178.245C1117.75 178.245 1107.24 178.503 1103.9 179.018C1101.21 179.405 1099.86 182.691 1099.86 188.878C1099.86 197.899 1100.25 211.432 1101.02 229.476C1101.91 247.39 1102.36 260.794 1102.36 269.687C1102.36 272.394 1101.08 273.747 1098.52 273.747C1095.95 273.747 1092.04 273.489 1086.78 272.974C1081.65 272.329 1077.74 272.007 1075.05 272.007C1072.87 272.007 1069.54 272.2 1065.05 272.587C1060.56 272.974 1057.22 273.167 1055.04 273.167C1051.84 273.167 1050.24 271.685 1050.24 268.72C1050.24 254.414 1050.88 232.955 1052.16 204.344C1053.57 175.603 1054.28 154.079 1054.28 139.773C1054.28 99.0464 1052.8 55.6129 1049.85 9.47288L1049.66 6.37969C1049.53 3.80204 1052.22 2.51321 1057.74 2.51321C1068.77 2.51321 1085.24 2.25545 1107.17 1.73991C1129.23 1.0955 1145.71 0.773301 1156.61 0.773301C1185.07 0.773301 1207.9 7.60407 1225.08 21.2656C1244.06 36.3449 1253.55 57.7394 1253.55 85.4492C1253.55 104.524 1250.99 119.539 1245.86 130.494C1240.47 142.093 1230.47 153.113 1215.85 163.552C1213.41 165.228 1212.2 166.839 1212.2 168.385C1212.2 170.19 1219.83 187.331 1235.09 219.809C1250.47 252.288 1258.17 269.558 1258.17 271.62ZM1205.46 96.2754C1205.46 72.9476 1198.8 57.3528 1185.46 49.491C1175.59 43.6912 1157.82 40.7914 1132.18 40.7914C1111.4 40.7914 1100.82 42.4669 1100.44 45.8178C1099.54 52.7775 1099.09 71.401 1099.09 101.688V138.613C1099.48 138.871 1100.31 139.129 1101.59 139.387C1103.9 139.644 1107.69 139.967 1112.94 140.353C1125.12 140.998 1138.27 141.32 1152.37 141.32C1187.77 141.32 1205.46 126.305 1205.46 96.2754Z"
+                        fill="black" fill-opacity="0.02" />
+                    <path
+                        d="M1462.25 97.822C1462.25 107.23 1461.87 121.472 1461.1 140.547C1460.33 159.492 1459.94 173.734 1459.94 183.271C1459.94 192.68 1460.2 206.792 1460.71 225.609C1461.35 244.297 1461.68 258.345 1461.68 267.754C1461.68 270.331 1460.46 272.007 1458.02 272.78C1456.99 273.038 1443.98 273.167 1418.97 273.167C1417.43 273.167 1416.47 268.334 1416.09 258.668C1415.83 249.001 1415.13 244.168 1413.97 244.168C1413.33 244.168 1412.37 244.748 1411.09 245.908C1389.67 264.596 1368.51 273.94 1347.61 273.94C1319.27 273.94 1300.55 263.63 1291.44 243.008C1285.8 230.249 1282.98 207.308 1282.98 174.185C1282.98 144.284 1285.35 118.959 1290.1 98.2086C1291.25 93.1822 1293.37 90.669 1296.45 90.669C1300.16 90.669 1305.74 90.7334 1313.18 90.8623C1320.62 90.9912 1326.2 91.0556 1329.91 91.0556C1332.48 91.0556 1333.76 92.4733 1333.76 95.3088C1333.76 100.335 1332.93 108.713 1331.26 120.441C1329.47 132.943 1328.5 141.771 1328.38 146.926C1327.99 154.659 1327.8 163.166 1327.8 172.445C1327.8 195 1329.4 210.143 1332.61 217.876C1338.12 231.796 1350.37 238.755 1369.35 238.755C1377.43 238.755 1386.98 234.76 1398.01 226.769C1409.68 218.392 1415.7 210.337 1416.09 202.604C1416.73 192.937 1417.05 158.912 1417.05 100.529C1417.05 94.2133 1419.68 91.0556 1424.94 91.0556H1456.67C1460.39 91.0556 1462.25 93.3111 1462.25 97.822Z"
+                        fill="black" fill-opacity="0.02" />
+                    <path
+                        d="M1635.75 97.822C1635.75 100.657 1634.28 106.973 1631.33 116.768C1628.38 126.563 1626.33 131.46 1625.17 131.46C1619.4 128.883 1613.57 126.305 1607.67 123.727C1601.9 121.15 1595.55 119.861 1588.63 119.861C1572.85 119.861 1559.71 125.725 1549.19 137.453C1538.68 149.182 1533.42 163.037 1533.42 179.018C1533.42 194.742 1538.68 208.339 1549.19 219.809C1559.97 231.667 1573.11 237.595 1588.63 237.595C1597.22 237.595 1605.68 235.469 1614.02 231.216C1622.35 226.962 1626.01 224.836 1624.98 224.836C1626.65 224.836 1628.51 230.249 1630.56 241.075C1632.48 250.87 1633.44 257.637 1633.44 261.374C1633.44 265.37 1625.94 269.3 1610.94 273.167C1598.37 276.389 1589.08 278 1583.05 278C1556.63 278 1534.32 268.076 1516.11 248.228C1498.29 228.896 1489.37 205.826 1489.37 179.018C1489.37 151.695 1498.09 128.496 1515.53 109.421C1533.49 89.8313 1555.86 80.0362 1582.66 80.0362C1600.62 80.0362 1617.03 84.6115 1631.91 93.7622C1634.47 95.3088 1635.75 96.662 1635.75 97.822Z"
+                        fill="black" fill-opacity="0.02" />
+                    <path
+                        d="M1710 41.9513C1710 57.8039 1701.22 65.7302 1683.65 65.7302C1665.82 65.7302 1656.91 57.8039 1656.91 41.9513C1656.91 34.8628 1659.67 28.9986 1665.18 24.3588C1670.31 19.9768 1676.47 17.7858 1683.65 17.7858C1690.83 17.7858 1696.98 20.0413 1702.11 24.5521C1707.37 29.063 1710 34.8628 1710 41.9513ZM1708.65 94.3421C1708.65 104.266 1708.01 119.281 1706.73 139.387C1705.58 159.363 1705 174.378 1705 184.431C1705 193.84 1705.19 207.952 1705.58 226.769C1705.96 245.457 1706.15 259.441 1706.15 268.72C1706.15 271.427 1705 272.78 1702.69 272.78H1665.18C1662.49 272.78 1661.14 270.138 1661.14 264.854C1661.14 255.961 1661.34 242.622 1661.72 224.836C1662.23 206.921 1662.49 193.453 1662.49 184.431C1662.49 174.378 1661.72 159.299 1660.18 139.193C1658.77 119.088 1658.07 104.008 1658.07 93.9555C1658.07 91.7645 1659.41 90.669 1662.1 90.669C1664.41 90.669 1667.94 90.9912 1672.68 91.6356C1677.56 92.28 1681.21 92.6022 1683.65 92.6022C1686.08 92.6022 1689.67 92.28 1694.42 91.6356C1699.29 90.9912 1702.95 90.669 1705.38 90.669C1707.56 90.669 1708.65 91.8934 1708.65 94.3421Z"
+                        fill="black" fill-opacity="0.02" />
+                </svg>
+            </span>
+
+            <span class="max-h-dvh">
+                <svg width="375" height="61" viewBox="0 0 375 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M53.0652 1.35744C53.0652 4.60964 52.9527 9.51623 52.7278 16.0772C52.5028 22.6382 52.3903 27.5589 52.3903 30.8394C52.3903 33.9219 52.4184 38.5457 52.4747 44.7107C52.5309 50.8475 52.5591 55.4571 52.5591 58.5396C52.5591 59.4729 52.2075 59.9395 51.5045 59.9395C51.0827 59.9395 50.45 59.8971 49.6063 59.8122C48.7627 59.7274 48.1299 59.685 47.7081 59.685C47.2581 59.685 46.5692 59.7274 45.6412 59.8122C44.7132 59.8971 44.0242 59.9395 43.5742 59.9395C43.068 59.9395 42.4634 59.4729 41.7604 58.5396C35.6861 50.3102 26.4764 38.0366 14.131 21.7191C12.2188 19.2304 11.108 17.8447 10.7987 17.5619C10.5174 17.5619 10.3768 18.1416 10.3768 19.3011C10.3768 23.6562 10.4471 30.2031 10.5878 38.9416C10.7284 47.6518 10.7987 54.1845 10.7987 58.5396C10.7987 59.4729 10.5174 59.9395 9.955 59.9395C9.47693 59.9395 8.74579 59.8971 7.76153 59.8122C6.77728 59.7274 6.04612 59.685 5.56805 59.685C5.06187 59.685 4.30257 59.7274 3.2902 59.8122C2.30595 59.8971 1.56073 59.9395 1.05454 59.9395C0.351506 59.9395 0 59.6567 0 59.0911C0 55.9803 0.140605 51.3 0.42182 45.0501C0.731157 38.7719 0.88583 34.0633 0.88583 30.9242C0.88583 27.5023 0.759278 21.3373 0.506184 12.4291C0.449941 10.1101 0.309336 6.63166 0.084364 1.99374L0.0421748 1.44228C0.0140534 1.01808 0.351506 0.791841 1.05454 0.763561C2.88244 0.735281 4.31664 0.67872 5.35714 0.59388C5.75084 0.5656 6.49607 0.452479 7.59281 0.254519C8.52081 0.0848391 9.25198 0 9.78629 0C10.0394 0 10.4753 0.410058 11.0939 1.23018C17.5619 10.1667 27.4606 23.4583 40.7902 41.105C41.3808 41.8403 41.9291 42.4766 42.4353 43.0139C42.6322 41.8261 42.7306 39.1113 42.7306 34.8693C42.7306 31.1929 42.59 25.6783 42.3088 18.3255C42.0557 10.9726 41.9291 5.47219 41.9291 1.82406C41.9291 0.890822 42.2104 0.4242 42.7728 0.4242C43.279 0.4242 44.0382 0.466619 45.0506 0.551459C46.0911 0.636299 46.8645 0.67872 47.3707 0.67872C47.905 0.67872 48.7064 0.636299 49.775 0.551459C50.8436 0.466619 51.6451 0.4242 52.1794 0.4242C52.77 0.4242 53.0652 0.735281 53.0652 1.35744Z"
+                        fill="black" fill-opacity="0.02" />
+                    <path
+                        d="M102.925 21.5494C102.925 21.6625 102.882 21.917 102.798 22.3129C101.701 28.7891 101.153 34.3744 101.153 39.0688C101.153 39.3516 101.504 45.7005 102.208 58.1154L102.25 58.7093C102.278 59.5294 101.898 59.9395 101.111 59.9395C100.352 59.9395 99.1845 60.0243 97.6097 60.194C96.063 60.392 94.91 60.491 94.1507 60.491C93.6164 60.491 93.2086 59.5012 92.9274 57.5216C92.6462 55.542 92.379 54.5522 92.126 54.5522C91.9572 54.5522 91.198 55.1036 89.8481 56.2065C88.189 57.564 86.6423 58.5962 85.2081 59.3032C82.9865 60.4344 80.7649 61 78.5433 61C73.0877 61 68.4899 58.8083 64.7497 54.4249C61.2064 50.2395 59.4348 45.3612 59.4348 39.79C59.4348 33.5118 61.2205 28.3224 64.7919 24.2218C68.5321 19.9516 73.4533 17.8164 79.5557 17.8164C83.8583 17.8164 87.6125 19.3153 90.8183 22.3129C91.2964 22.8785 92.0416 23.6987 93.054 24.7733C93.1384 24.8581 93.2227 24.9006 93.3071 24.9006C93.4758 24.9006 93.7148 24.0097 94.0242 22.2281C94.3335 20.4465 94.7272 19.5556 95.2053 19.5556C95.9646 19.5556 97.3847 19.7677 99.4657 20.1919C101.772 20.701 102.925 21.1535 102.925 21.5494ZM92.1682 39.2809C92.1682 35.8025 91.1417 32.819 89.0888 30.3303C86.9235 27.6437 84.1535 26.3004 80.779 26.3004C77.4044 26.3004 74.5922 27.6296 72.3425 30.2879C70.1772 32.8331 69.0945 35.8308 69.0945 39.2809C69.0945 42.7028 70.1772 45.6722 72.3425 48.1892C74.5922 50.8192 77.4044 52.1342 80.779 52.1342C84.0692 52.1342 86.8251 50.7909 89.0467 48.1043C91.1277 45.5874 92.1682 42.6463 92.1682 39.2809Z"
+                        fill="black" fill-opacity="0.02" />
+                    <path
+                        d="M173.959 58.37C173.959 59.4729 173.636 60.0243 172.989 60.0243C172.567 60.0243 171.921 59.9819 171.049 59.8971C170.205 59.8122 169.558 59.7698 169.109 59.7698C168.63 59.7698 167.913 59.7981 166.957 59.8547C166.001 59.9112 165.284 59.9395 164.806 59.9395C164.215 59.9395 163.92 59.2749 163.92 57.9458C163.92 56.6449 163.962 54.7077 164.047 52.1342C164.159 49.5325 164.215 47.5811 164.215 46.2803C164.215 39.1254 164.187 35.1379 164.131 34.3178C163.906 31.405 163.316 29.3971 162.359 28.2942C161.263 27.1064 159.308 26.5125 156.496 26.5125C154.724 26.5125 152.728 27.3609 150.506 29.0577C148.2 30.8394 147.005 32.5927 146.921 34.3178C146.808 36.5236 146.752 40.5535 146.752 46.4075C146.752 47.7932 146.808 49.8718 146.921 52.6433C147.033 55.4147 147.089 57.4933 147.089 58.879C147.089 59.6426 146.836 60.0243 146.33 60.0243C145.824 60.0243 145.079 59.9819 144.094 59.8971C143.138 59.8122 142.407 59.7698 141.901 59.7698C141.451 59.7698 140.79 59.7981 139.918 59.8547C139.047 59.9112 138.386 59.9395 137.936 59.9395C137.373 59.9395 137.092 59.5294 137.092 58.7093C137.092 57.3519 137.134 55.3157 137.219 52.6008C137.303 49.8577 137.345 47.8074 137.345 46.4499V36.2267C137.345 33.0311 136.966 30.7545 136.206 29.3971C135.138 27.474 133.099 26.5125 130.09 26.5125C128.318 26.5125 126.209 27.2619 123.763 28.7608C121.063 30.401 119.713 32.0554 119.713 33.7239V46.1106C119.713 47.5246 119.727 49.6314 119.755 52.4311C119.783 55.2309 119.798 57.3236 119.798 58.7093C119.798 59.5294 119.474 59.9395 118.827 59.9395H110.981C110.419 59.9395 110.138 59.5577 110.138 58.7942C110.138 56.5035 110.152 53.0675 110.18 48.4861C110.208 43.8764 110.222 40.4263 110.222 38.1356C110.222 32.9604 109.674 27.7993 108.577 22.6523C108.493 22.2847 108.451 21.9877 108.451 21.7615C108.451 21.3938 108.577 21.1817 108.83 21.1252C109.871 21.0121 111.389 20.8 113.386 20.4889C114.314 20.2061 115.706 19.895 117.562 19.5556L117.899 19.5132C118.237 19.5132 118.546 20.5172 118.827 22.525C119.137 24.5046 119.404 25.4944 119.629 25.4944C119.629 25.4944 120.332 24.8723 121.738 23.628C123.397 22.1857 125.056 21.0403 126.715 20.1919C129.106 18.9476 131.496 18.3255 133.886 18.3255C140.354 18.3255 144.474 20.9838 146.246 26.3004C147.989 24.038 150.155 22.1715 152.742 20.701C155.498 19.1173 158.226 18.3255 160.925 18.3255C166.128 18.3255 169.727 19.8526 171.724 22.9068C173.158 25.1692 173.875 28.7466 173.875 33.6391C173.875 34.5723 173.847 36.0146 173.791 37.9659C173.735 39.9172 173.706 41.3595 173.706 42.2928C173.706 44.0744 173.749 46.761 173.833 50.3526C173.917 53.9159 173.959 56.5883 173.959 58.37Z"
+                        fill="black" fill-opacity="0.02" />
+                    <path
+                        d="M223.313 21.5494C223.313 21.6625 223.271 21.917 223.186 22.3129C222.089 28.7891 221.541 34.3744 221.541 39.0688C221.541 39.3516 221.893 45.7005 222.596 58.1154L222.638 58.7093C222.666 59.5294 222.286 59.9395 221.499 59.9395C220.74 59.9395 219.573 60.0243 217.998 60.194C216.451 60.392 215.298 60.491 214.539 60.491C214.005 60.491 213.597 59.5012 213.315 57.5216C213.034 55.542 212.767 54.5522 212.514 54.5522C212.345 54.5522 211.586 55.1036 210.236 56.2065C208.577 57.564 207.03 58.5962 205.596 59.3032C203.375 60.4344 201.153 61 198.931 61C193.476 61 188.878 58.8083 185.138 54.4249C181.594 50.2395 179.823 45.3612 179.823 39.79C179.823 33.5118 181.609 28.3224 185.18 24.2218C188.92 19.9516 193.841 17.8164 199.944 17.8164C204.246 17.8164 208.001 19.3153 211.206 22.3129C211.684 22.8785 212.43 23.6987 213.442 24.7733C213.526 24.8581 213.611 24.9006 213.695 24.9006C213.864 24.9006 214.103 24.0097 214.412 22.2281C214.722 20.4465 215.115 19.5556 215.593 19.5556C216.353 19.5556 217.773 19.7677 219.854 20.1919C222.16 20.701 223.313 21.1535 223.313 21.5494ZM212.556 39.2809C212.556 35.8025 211.53 32.819 209.477 30.3303C207.312 27.6437 204.542 26.3004 201.167 26.3004C197.792 26.3004 194.98 27.6296 192.731 30.2879C190.565 32.8331 189.483 35.8308 189.483 39.2809C189.483 42.7028 190.565 45.6722 192.731 48.1892C194.98 50.8192 197.792 52.1342 201.167 52.1342C204.457 52.1342 207.213 50.7909 209.435 48.1043C211.516 45.5874 212.556 42.6463 212.556 39.2809Z"
+                        fill="black" fill-opacity="0.02" />
+                    <path
+                        d="M275.914 59.6001C275.914 59.8264 275.689 59.9395 275.239 59.9395C274.705 59.9395 273.889 59.8971 272.792 59.8122C271.696 59.7274 270.88 59.685 270.346 59.685C269.755 59.685 268.869 59.7274 267.688 59.8122C266.535 59.8971 265.664 59.9395 265.073 59.9395C264.426 59.9395 263.934 59.586 263.597 58.879C262.697 56.956 260.138 51.003 255.92 41.0202C255.498 40.0021 254.471 39.3799 252.84 39.1537C252.475 39.1254 251.195 39.1113 249.002 39.1113C245.121 39.1113 242.815 39.1678 242.084 39.2809C241.493 39.3658 241.198 40.0869 241.198 41.4444C241.198 43.424 241.282 46.3934 241.451 50.3526C241.648 54.2835 241.746 57.2246 241.746 59.1759C241.746 59.7698 241.465 60.0668 240.903 60.0668C240.34 60.0668 239.483 60.0102 238.33 59.8971C237.205 59.7557 236.347 59.685 235.756 59.685C235.278 59.685 234.547 59.7274 233.563 59.8122C232.579 59.8971 231.848 59.9395 231.369 59.9395C230.666 59.9395 230.315 59.6143 230.315 58.9638C230.315 55.8248 230.456 51.1161 230.737 44.838C231.046 38.5315 231.201 33.8088 231.201 30.6697C231.201 21.7332 230.877 12.2028 230.231 2.07858L230.188 1.39986C230.16 0.83426 230.751 0.551459 231.96 0.551459C234.378 0.551459 237.992 0.4949 242.801 0.38178C247.638 0.24038 251.251 0.169681 253.642 0.169681C259.885 0.169681 264.89 1.66852 268.659 4.6662C272.821 7.97496 274.902 12.6694 274.902 18.7497C274.902 22.9351 274.339 26.2297 273.214 28.6335C272.033 31.1787 269.84 33.5967 266.634 35.8873C266.1 36.255 265.832 36.6085 265.832 36.9478C265.832 37.3438 267.506 41.105 270.852 48.2316C274.227 55.3581 275.914 59.1477 275.914 59.6001ZM264.356 21.1252C264.356 16.0065 262.894 12.5846 259.969 10.8595C257.804 9.58692 253.909 8.95063 248.285 8.95063C243.729 8.95063 241.409 9.31827 241.325 10.0535C241.128 11.5807 241.029 15.6671 241.029 22.3129V30.4152C241.114 30.4717 241.296 30.5283 241.578 30.5848C242.084 30.6414 242.913 30.7121 244.066 30.7969C246.738 30.9383 249.62 31.009 252.714 31.009C260.475 31.009 264.356 27.7144 264.356 21.1252Z"
+                        fill="black" fill-opacity="0.02" />
+                    <path
+                        d="M320.669 21.4645C320.669 23.529 320.585 26.6539 320.416 30.8394C320.247 34.9965 320.163 38.1215 320.163 40.2142C320.163 42.2786 320.219 45.3753 320.332 49.5042C320.472 53.6048 320.543 56.6873 320.543 58.7517C320.543 59.3173 320.276 59.685 319.741 59.8547C319.516 59.9112 316.662 59.9395 311.178 59.9395C310.841 59.9395 310.63 58.879 310.546 56.758C310.489 54.637 310.335 53.5765 310.082 53.5765C309.941 53.5765 309.73 53.7038 309.449 53.9583C304.753 58.0589 300.113 60.1092 295.529 60.1092C289.314 60.1092 285.208 57.8468 283.211 53.322C281.974 50.5223 281.355 45.4884 281.355 38.2205C281.355 31.6595 281.876 26.1025 282.916 21.5494C283.169 20.4465 283.633 19.895 284.308 19.895C285.124 19.895 286.347 19.9091 287.978 19.9374C289.609 19.9657 290.832 19.9798 291.648 19.9798C292.21 19.9798 292.492 20.2909 292.492 20.9131C292.492 22.016 292.309 23.8542 291.943 26.4277C291.549 29.1708 291.339 31.108 291.31 32.2392C291.226 33.936 291.184 35.8025 291.184 37.8387C291.184 42.7877 291.535 46.1106 292.238 47.8074C293.448 50.8616 296.133 52.3887 300.295 52.3887C302.067 52.3887 304.162 51.5121 306.58 49.7587C309.139 47.9205 310.461 46.153 310.546 44.4562C310.686 42.3352 310.756 34.8693 310.756 22.0584C310.756 20.6727 311.333 19.9798 312.486 19.9798H319.446C320.261 19.9798 320.669 20.4747 320.669 21.4645Z"
+                        fill="black" fill-opacity="0.02" />
+                    <path
+                        d="M358.718 21.4645C358.718 22.0867 358.394 23.4724 357.747 25.6217C357.101 27.771 356.651 28.8456 356.398 28.8456C355.132 28.28 353.853 27.7144 352.559 27.1488C351.294 26.5832 349.902 26.3004 348.383 26.3004C344.924 26.3004 342.042 27.5872 339.736 30.1606C337.43 32.7341 336.277 35.7742 336.277 39.2809C336.277 42.7311 337.43 45.7146 339.736 48.2316C342.098 50.8333 344.98 52.1342 348.383 52.1342C350.267 52.1342 352.123 51.6676 353.951 50.7344C355.779 49.8011 356.58 49.3345 356.355 49.3345C356.721 49.3345 357.129 50.5223 357.579 52.8978C358 55.0471 358.211 56.5318 358.211 57.3519C358.211 58.2286 356.566 59.0911 353.276 59.9395C350.52 60.6465 348.481 61 347.16 61C341.367 61 336.474 58.8224 332.48 54.4673C328.571 50.2253 326.617 45.1632 326.617 39.2809C326.617 33.2856 328.529 28.1952 332.354 24.0097C336.291 19.7112 341.198 17.5619 347.075 17.5619C351.012 17.5619 354.612 18.5658 357.874 20.5737C358.436 20.9131 358.718 21.21 358.718 21.4645Z"
+                        fill="black" fill-opacity="0.02" />
+                    <path
+                        d="M375 9.20515C375 12.6836 373.074 14.4228 369.221 14.4228C365.312 14.4228 363.358 12.6836 363.358 9.20515C363.358 7.64975 363.962 6.363 365.172 5.34492C366.296 4.3834 367.646 3.90264 369.221 3.90264C370.796 3.90264 372.146 4.39754 373.271 5.38734C374.424 6.37714 375 7.64975 375 9.20515ZM374.705 20.701C374.705 22.8785 374.564 26.1732 374.283 30.5848C374.03 34.9682 373.903 38.2629 373.903 40.4687C373.903 42.5331 373.945 45.6298 374.03 49.7587C374.114 53.8593 374.156 56.9277 374.156 58.9638C374.156 59.5577 373.903 59.8547 373.397 59.8547H365.172C364.581 59.8547 364.286 59.2749 364.286 58.1154C364.286 56.1641 364.328 53.2371 364.412 49.3345C364.525 45.4036 364.581 42.4483 364.581 40.4687C364.581 38.2629 364.412 34.9541 364.075 30.5424C363.765 26.1307 363.611 22.822 363.611 20.6161C363.611 20.1354 363.906 19.895 364.497 19.895C365.003 19.895 365.776 19.9657 366.817 20.1071C367.885 20.2485 368.687 20.3192 369.221 20.3192C369.755 20.3192 370.543 20.2485 371.583 20.1071C372.652 19.9657 373.453 19.895 373.988 19.895C374.466 19.895 374.705 20.1637 374.705 20.701Z"
+                        fill="black" fill-opacity="0.02" />
+                </svg>
+
+            </span>
+        </div>
+        <div class="relative bg-white  z-20 max-w-[827px] mx-auto rounded-bl-[3px] rounded-br-[3px] mb-9 md:mb-14">
+            <div
+                class="audio_top flex max-md:flex-col md:items-center justify-between max-w-[827px] rounded-[3px] w-full pt-1  min-[375px]:pt-[75px] min-[768px]:pt-[145px] pb-[18px] px-[18px] md:px-6 ">
+                <h1 class="font-bold text-lg md:text-2xl text-white leading-[51px] md:leading-[50px] max-md:mb-[5px]">
+                    Шримад - бхагаватам</h1>
+                <a href="#"
+                    class="max-w-[153px] font-semibold text-[15px] text-[#434343] leading-9 px-[18px] bg-white rounded-[3px]">Другие
+                    албомы</a>
+            </div>
+            <div class="px-[18px] md:px-6 pt-[26px] pb-5 md:py-9">
+                <div class="w-full flex flex-col gap-4 max-[520px]:mb-5 mb-6">
+                    <div>
+                        <div class="flex items-center">
+                            <!-- Ovoz O'ynatish Tugi -->
+                            <button id="playPauseBtn"
+                                class="bg-[#2B1EDD] max-[520px]:hidden max-w-[30px] h-[30px]  rounded-full w-12  flex items-center justify-center mr-2.5">
+                                <svg width="9" height="11" viewBox="0 0 9 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 5.5L0.750001 10.2631L0.750001 0.73686L9 5.5Z" fill="white" />
+                                </svg>
+                            </button>
+                            <div class="max-[520px]:hidden flex items-center gap-1 mr-5">
+                                <button class="cursor-pointer">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.5 5.13397C0.833333 5.51887 0.833333 6.48113 1.5 6.86603L7.5 10.3301C8.16667 10.715 9 10.2339 9 9.4641L9 2.5359C9 1.7661 8.16667 1.28497 7.5 1.66987L1.5 5.13397Z"
+                                            fill="#D9D9D9" />
+                                        <rect x="1" y="11" width="1" height="10" rx="0.5" transform="rotate(-180 1 11)"
+                                            fill="#D9D9D9" />
+                                    </svg>
+                                </button>
+                                <button class="cursor-pointer">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.5 6.86603C11.1667 6.48113 11.1667 5.51887 10.5 5.13397L4.5 1.66987C3.83333 1.28497 3 1.7661 3 2.5359L3 9.4641C3 10.2339 3.83333 10.715 4.5 10.3301L10.5 6.86603Z"
+                                            fill="#D9D9D9" />
+                                        <rect x="11" y="1" width="1" height="10" rx="0.5" fill="#D9D9D9" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <!-- Album rasmini ko'rsatish -->
+                            <img src="./img/audio/audio1.png" id="playPauseBtn"
+                                class="rounded-lg w-[42px] h-[42px] mr-2.5" alt="album cover">
+
+
+                            <div class="flex-grow">
+                                <p class="font-normal text-sm text-[#434343] mb-0.5 leading-[14px]">Песень 1, глава 2,
+                                    2.2.37
+                                </p>
+                                <div class="flex items-center justify-between mb-1.5">
+                                    <p class="font-normal  text-sm text-[#9E9E9E] leading-[15px]">Shrimad Bhavagatam
+                                    </p>
+                                    <span id="durationTime"
+                                        class="font-normal text-sm text-[#9E9E9E] leading-[11px] mx-2">32:20</span>
+                                </div>
+
+                                <!-- Progress Bar -->
+                                <div class="w-full bg-[#E9E9E9] h-[3px]">
+                                    <div id="progressBar" class="bg-[#4034E0] h-[3px]" style="width: 0%"></div>
+                                </div>
+                            </div>
+
+                            <div class="max-[520px]:hidden flex items-center gap-2 ml-6">
+                                <input type="range" id="volumeControl" min="0" max="100" value="100" step="1"
+                                    class="max-w-[38px] max-h-0.5 outline-none">
+                                <button>
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M6.78602 11.9791C6.54785 11.9159 6.53467 11.9053 5.52331 10.9594C5.2624 10.7153 4.48918 9.99507 3.80505 9.35882L2.56121 8.20202L1.49238 8.19398L0.423567 8.18594L0.327875 8.14337C0.206023 8.08917 0.101995 7.99046 0.0448642 7.87485L0 7.78405V5.99965V4.21525L0.0471854 4.13027C0.143894 3.95611 0.282773 3.85589 0.473277 3.82279C0.538252 3.81149 0.925003 3.80532 1.56671 3.80532H2.5596L3.17738 3.23178C3.51716 2.91635 4.36198 2.12965 5.05476 1.48355C6.36191 0.264515 6.48779 0.15184 6.6179 0.0845156C7.01288 -0.119903 7.37203 0.0566559 7.47201 0.504413C7.50966 0.672998 7.50952 11.4216 7.47186 11.5587C7.38072 11.8908 7.10047 12.0625 6.78602 11.9791ZM11.0528 11.4332C10.7206 11.3319 10.5562 10.9702 10.7082 10.6754C10.7708 10.5541 10.8655 10.4706 11.0293 10.3925C11.5509 10.1439 12.1043 9.74303 12.5 9.32732C13.422 8.35869 13.8882 7.15256 13.8451 5.84693C13.8203 5.09539 13.6541 4.46546 13.3063 3.80532C12.8092 2.86154 12.0214 2.10123 11.0546 1.63222C10.8231 1.51991 10.7326 1.44555 10.667 1.31358C10.6297 1.23861 10.6231 1.20319 10.6234 1.08049C10.6238 0.903106 10.6623 0.81604 10.7952 0.69208C10.9185 0.577059 11.0345 0.536629 11.2162 0.545341C11.3354 0.551064 11.3693 0.56026 11.4957 0.621251C13.0136 1.35329 14.163 2.61245 14.6886 4.11879C14.8917 4.70092 14.9821 5.20745 14.9975 5.84944C15.0122 6.45957 14.962 6.91754 14.8224 7.44646C14.5352 8.53459 13.9852 9.45197 13.1402 10.2522C12.6333 10.7323 12.0754 11.1185 11.5277 11.3683C11.3407 11.4537 11.1883 11.4745 11.0528 11.4332ZM9.77254 9.91736C9.60428 9.86018 9.49781 9.767 9.42401 9.61239C9.3711 9.5015 9.37167 9.29336 9.4252 9.18264C9.48073 9.06777 9.59988 8.9609 9.77574 8.86819C10.5921 8.43783 11.211 7.67128 11.4365 6.81147C11.5412 6.41207 11.5686 5.9089 11.5065 5.52696C11.3363 4.47969 10.6811 3.58934 9.7251 3.10612C9.58353 3.03457 9.49808 2.96049 9.44029 2.85923C9.24462 2.51635 9.48658 2.08813 9.89351 2.05713C10.0451 2.04559 10.1372 2.07179 10.3435 2.18509C10.7329 2.39901 11.0555 2.6356 11.3723 2.93962C11.7332 3.28599 11.9868 3.62723 12.2246 4.08664C12.5683 4.75039 12.7203 5.42141 12.6927 6.15237C12.6352 7.67303 11.7837 9.01133 10.3727 9.79886C10.1689 9.9126 10.1163 9.93147 9.97924 9.93996C9.8909 9.94543 9.83816 9.93966 9.77254 9.91736ZM8.29144 8.12448C7.85229 7.969 7.76575 7.43185 8.13657 7.16316C8.17159 7.13779 8.26506 7.09812 8.34427 7.075C8.57627 7.00732 8.73948 6.91826 8.88559 6.77962C9.11259 6.56426 9.20862 6.35899 9.22161 6.06151C9.23664 5.71672 9.13751 5.47155 8.88762 5.2356C8.7277 5.0846 8.58968 5.00567 8.38569 4.94852C8.31996 4.93012 8.23064 4.89271 8.18719 4.86541C7.88824 4.67753 7.85271 4.24589 8.11715 4.01461C8.2407 3.90654 8.32472 3.87761 8.5137 3.87804C8.64721 3.87836 8.69776 3.88626 8.81019 3.92437C9.61236 4.19631 10.1716 4.80473 10.3455 5.59473C10.3969 5.82855 10.3973 6.17679 10.3464 6.41284C10.2483 6.86711 10.0499 7.21897 9.70861 7.54398C9.43307 7.80635 9.14701 7.97696 8.79154 8.09098C8.63048 8.14265 8.38852 8.15885 8.29144 8.12448Z"
+                                            fill="#D9D9D9" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <!-- Yuklab olish -->
+                            <a href="./music/book_1.mp3" download class="bg-transparent ml-3">
+                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.82148 0.017224C5.56088 0.0612064 5.35729 0.213381 5.24373 0.449052L5.18078 0.579719L5.17315 2.66205L5.16555 4.74436L4.39349 4.75272C3.65702 4.76067 3.61623 4.76372 3.50784 4.8191C3.18553 4.98374 3.08874 5.3535 3.29383 5.63653C3.3303 5.68683 4.09601 6.43009 4.99542 7.28823C6.73278 8.9459 6.7429 8.95431 7 8.95431C7.25622 8.95431 7.26952 8.94328 8.97827 7.31421C9.8632 6.47055 10.6297 5.72559 10.6815 5.65874C10.9117 5.36218 10.8279 4.99061 10.4922 4.8191C10.3838 4.76372 10.343 4.76067 9.60651 4.75272L8.83445 4.74436L8.82685 2.66205L8.81922 0.579719L8.75597 0.446256C8.67751 0.280622 8.53293 0.143422 8.35415 0.0648651C8.21898 0.00549011 8.20402 0.00473224 7.08207 0.000446364C6.45765 -0.00195791 5.89039 0.00559464 5.82148 0.017224ZM0.420732 5.77508C0.260094 5.84907 0.150667 5.94819 0.0691718 6.09352C0.0111757 6.19701 0.010273 6.21927 0.00244896 7.76639C-0.00422605 9.08184 0.00132734 9.37587 0.0369183 9.59192C0.233175 10.7834 1.16825 11.7093 2.42127 11.9528C2.6492 11.9971 2.92783 12 7 12C11.0722 12 11.3508 11.9971 11.5787 11.9528C12.8317 11.7093 13.7668 10.7834 13.9631 9.59192C13.9987 9.37587 14.0042 9.08184 13.9976 7.76639C13.9897 6.21927 13.9888 6.19701 13.9308 6.09352C13.8471 5.94411 13.738 5.84753 13.5691 5.77302C13.2463 5.63062 12.8573 5.7755 12.6727 6.10693C12.6251 6.19251 12.6209 6.30337 12.6081 7.83173L12.5944 9.46506L12.5234 9.65066C12.3471 10.1108 11.9624 10.462 11.4728 10.6095L11.2813 10.6672H7H2.71869L2.52719 10.6092C2.01705 10.4548 1.63326 10.0892 1.44975 9.58266C1.41359 9.48289 1.40494 9.2174 1.39269 7.83173C1.37914 6.30421 1.3749 6.19246 1.32728 6.10693C1.14278 5.77561 0.739847 5.62814 0.420732 5.77508Z"
+                                        fill="#4034E0" />
+                                </svg>
+                            </a>
+                        </div>
+                        <!-- Audio elementi -->
+                        <audio id="audioPlayer" src="./music/book_1.mp3"></audio>
+                    </div>
+                    <div class="pt-4">
+                        <div class="flex items-center">
+                            <!-- Ovoz O'ynatish Tugi -->
+                            <button id="playPauseBtn"
+                                class="bg-[#2B1EDD] max-[520px]:hidden max-w-[30px] h-[30px]  rounded-full w-12  flex items-center justify-center mr-2.5">
+                                <svg width="9" height="11" viewBox="0 0 9 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 5.5L0.750001 10.2631L0.750001 0.73686L9 5.5Z" fill="white" />
+                                </svg>
+                            </button>
+                            <div class="max-[520px]:hidden flex items-center gap-1 mr-5">
+                                <button class="cursor-pointer">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.5 5.13397C0.833333 5.51887 0.833333 6.48113 1.5 6.86603L7.5 10.3301C8.16667 10.715 9 10.2339 9 9.4641L9 2.5359C9 1.7661 8.16667 1.28497 7.5 1.66987L1.5 5.13397Z"
+                                            fill="#D9D9D9" />
+                                        <rect x="1" y="11" width="1" height="10" rx="0.5" transform="rotate(-180 1 11)"
+                                            fill="#D9D9D9" />
+                                    </svg>
+                                </button>
+                                <button class="cursor-pointer">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.5 6.86603C11.1667 6.48113 11.1667 5.51887 10.5 5.13397L4.5 1.66987C3.83333 1.28497 3 1.7661 3 2.5359L3 9.4641C3 10.2339 3.83333 10.715 4.5 10.3301L10.5 6.86603Z"
+                                            fill="#D9D9D9" />
+                                        <rect x="11" y="1" width="1" height="10" rx="0.5" fill="#D9D9D9" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <!-- Album rasmini ko'rsatish -->
+                            <img src="./img/audio/audio2.png id=" playPauseBtn"" class=rounded-lg w-[42px] h-[42px]
+                                mr-2.5" alt="album cover">
+
+
+                            <div class="flex-grow">
+                                <p class="font-normal text-sm text-[#434343] mb-0.5 leading-[14px]">Песень 2, глава 2,
+                                    2.2.38
+                                </p>
+                                <div class="flex items-center justify-between mb-1.5">
+                                    <p class="font-normal  text-sm text-[#9E9E9E] leading-[15px]">Shrimad Bhavagatam
+                                    </p>
+                                    <span id="durationTime"
+                                        class="font-normal text-sm text-[#9E9E9E] leading-[11px] mx-2">32:20</span>
+                                </div>
+
+                                <!-- Progress Bar -->
+                                <div class="w-full bg-[#E9E9E9] h-[3px]">
+                                    <div id="progressBar" class="bg-[#4034E0] h-[3px]" style="width: 0%"></div>
+                                </div>
+                            </div>
+
+                            <div class="max-[520px]:hidden flex items-center gap-2 ml-6">
+                                <input type="range" id="volumeControl" min="0" max="100" value="100" step="1"
+                                    class="max-w-[38px] max-h-0.5 outline-none">
+                                <button>
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M6.78602 11.9791C6.54785 11.9159 6.53467 11.9053 5.52331 10.9594C5.2624 10.7153 4.48918 9.99507 3.80505 9.35882L2.56121 8.20202L1.49238 8.19398L0.423567 8.18594L0.327875 8.14337C0.206023 8.08917 0.101995 7.99046 0.0448642 7.87485L0 7.78405V5.99965V4.21525L0.0471854 4.13027C0.143894 3.95611 0.282773 3.85589 0.473277 3.82279C0.538252 3.81149 0.925003 3.80532 1.56671 3.80532H2.5596L3.17738 3.23178C3.51716 2.91635 4.36198 2.12965 5.05476 1.48355C6.36191 0.264515 6.48779 0.15184 6.6179 0.0845156C7.01288 -0.119903 7.37203 0.0566559 7.47201 0.504413C7.50966 0.672998 7.50952 11.4216 7.47186 11.5587C7.38072 11.8908 7.10047 12.0625 6.78602 11.9791ZM11.0528 11.4332C10.7206 11.3319 10.5562 10.9702 10.7082 10.6754C10.7708 10.5541 10.8655 10.4706 11.0293 10.3925C11.5509 10.1439 12.1043 9.74303 12.5 9.32732C13.422 8.35869 13.8882 7.15256 13.8451 5.84693C13.8203 5.09539 13.6541 4.46546 13.3063 3.80532C12.8092 2.86154 12.0214 2.10123 11.0546 1.63222C10.8231 1.51991 10.7326 1.44555 10.667 1.31358C10.6297 1.23861 10.6231 1.20319 10.6234 1.08049C10.6238 0.903106 10.6623 0.81604 10.7952 0.69208C10.9185 0.577059 11.0345 0.536629 11.2162 0.545341C11.3354 0.551064 11.3693 0.56026 11.4957 0.621251C13.0136 1.35329 14.163 2.61245 14.6886 4.11879C14.8917 4.70092 14.9821 5.20745 14.9975 5.84944C15.0122 6.45957 14.962 6.91754 14.8224 7.44646C14.5352 8.53459 13.9852 9.45197 13.1402 10.2522C12.6333 10.7323 12.0754 11.1185 11.5277 11.3683C11.3407 11.4537 11.1883 11.4745 11.0528 11.4332ZM9.77254 9.91736C9.60428 9.86018 9.49781 9.767 9.42401 9.61239C9.3711 9.5015 9.37167 9.29336 9.4252 9.18264C9.48073 9.06777 9.59988 8.9609 9.77574 8.86819C10.5921 8.43783 11.211 7.67128 11.4365 6.81147C11.5412 6.41207 11.5686 5.9089 11.5065 5.52696C11.3363 4.47969 10.6811 3.58934 9.7251 3.10612C9.58353 3.03457 9.49808 2.96049 9.44029 2.85923C9.24462 2.51635 9.48658 2.08813 9.89351 2.05713C10.0451 2.04559 10.1372 2.07179 10.3435 2.18509C10.7329 2.39901 11.0555 2.6356 11.3723 2.93962C11.7332 3.28599 11.9868 3.62723 12.2246 4.08664C12.5683 4.75039 12.7203 5.42141 12.6927 6.15237C12.6352 7.67303 11.7837 9.01133 10.3727 9.79886C10.1689 9.9126 10.1163 9.93147 9.97924 9.93996C9.8909 9.94543 9.83816 9.93966 9.77254 9.91736ZM8.29144 8.12448C7.85229 7.969 7.76575 7.43185 8.13657 7.16316C8.17159 7.13779 8.26506 7.09812 8.34427 7.075C8.57627 7.00732 8.73948 6.91826 8.88559 6.77962C9.11259 6.56426 9.20862 6.35899 9.22161 6.06151C9.23664 5.71672 9.13751 5.47155 8.88762 5.2356C8.7277 5.0846 8.58968 5.00567 8.38569 4.94852C8.31996 4.93012 8.23064 4.89271 8.18719 4.86541C7.88824 4.67753 7.85271 4.24589 8.11715 4.01461C8.2407 3.90654 8.32472 3.87761 8.5137 3.87804C8.64721 3.87836 8.69776 3.88626 8.81019 3.92437C9.61236 4.19631 10.1716 4.80473 10.3455 5.59473C10.3969 5.82855 10.3973 6.17679 10.3464 6.41284C10.2483 6.86711 10.0499 7.21897 9.70861 7.54398C9.43307 7.80635 9.14701 7.97696 8.79154 8.09098C8.63048 8.14265 8.38852 8.15885 8.29144 8.12448Z"
+                                            fill="#D9D9D9" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <!-- Yuklab olish -->
+                            <a href="./music/book_1.mp3" download class="bg-transparent ml-3">
+                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.82148 0.017224C5.56088 0.0612064 5.35729 0.213381 5.24373 0.449052L5.18078 0.579719L5.17315 2.66205L5.16555 4.74436L4.39349 4.75272C3.65702 4.76067 3.61623 4.76372 3.50784 4.8191C3.18553 4.98374 3.08874 5.3535 3.29383 5.63653C3.3303 5.68683 4.09601 6.43009 4.99542 7.28823C6.73278 8.9459 6.7429 8.95431 7 8.95431C7.25622 8.95431 7.26952 8.94328 8.97827 7.31421C9.8632 6.47055 10.6297 5.72559 10.6815 5.65874C10.9117 5.36218 10.8279 4.99061 10.4922 4.8191C10.3838 4.76372 10.343 4.76067 9.60651 4.75272L8.83445 4.74436L8.82685 2.66205L8.81922 0.579719L8.75597 0.446256C8.67751 0.280622 8.53293 0.143422 8.35415 0.0648651C8.21898 0.00549011 8.20402 0.00473224 7.08207 0.000446364C6.45765 -0.00195791 5.89039 0.00559464 5.82148 0.017224ZM0.420732 5.77508C0.260094 5.84907 0.150667 5.94819 0.0691718 6.09352C0.0111757 6.19701 0.010273 6.21927 0.00244896 7.76639C-0.00422605 9.08184 0.00132734 9.37587 0.0369183 9.59192C0.233175 10.7834 1.16825 11.7093 2.42127 11.9528C2.6492 11.9971 2.92783 12 7 12C11.0722 12 11.3508 11.9971 11.5787 11.9528C12.8317 11.7093 13.7668 10.7834 13.9631 9.59192C13.9987 9.37587 14.0042 9.08184 13.9976 7.76639C13.9897 6.21927 13.9888 6.19701 13.9308 6.09352C13.8471 5.94411 13.738 5.84753 13.5691 5.77302C13.2463 5.63062 12.8573 5.7755 12.6727 6.10693C12.6251 6.19251 12.6209 6.30337 12.6081 7.83173L12.5944 9.46506L12.5234 9.65066C12.3471 10.1108 11.9624 10.462 11.4728 10.6095L11.2813 10.6672H7H2.71869L2.52719 10.6092C2.01705 10.4548 1.63326 10.0892 1.44975 9.58266C1.41359 9.48289 1.40494 9.2174 1.39269 7.83173C1.37914 6.30421 1.3749 6.19246 1.32728 6.10693C1.14278 5.77561 0.739847 5.62814 0.420732 5.77508Z"
+                                        fill="#4034E0" />
+                                </svg>
+                            </a>
+                        </div>
+                        <audio id="audioPlayer" src="./music/book_1.mp3"></audio>
+                    </div>
+                    <div class="pt-4">
+                        <div class="flex items-center">
+                            <!-- Ovoz O'ynatish Tugi -->
+                            <button id="playPauseBtn"
+                                class="bg-[#2B1EDD] max-[520px]:hidden max-w-[30px] h-[30px]  rounded-full w-12  flex items-center justify-center mr-2.5">
+                                <svg width="9" height="11" viewBox="0 0 9 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 5.5L0.750001 10.2631L0.750001 0.73686L9 5.5Z" fill="white" />
+                                </svg>
+                            </button>
+                            <div class="max-[520px]:hidden flex items-center gap-1 mr-5">
+                                <button class="cursor-pointer">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.5 5.13397C0.833333 5.51887 0.833333 6.48113 1.5 6.86603L7.5 10.3301C8.16667 10.715 9 10.2339 9 9.4641L9 2.5359C9 1.7661 8.16667 1.28497 7.5 1.66987L1.5 5.13397Z"
+                                            fill="#D9D9D9" />
+                                        <rect x="1" y="11" width="1" height="10" rx="0.5" transform="rotate(-180 1 11)"
+                                            fill="#D9D9D9" />
+                                    </svg>
+                                </button>
+                                <button class="cursor-pointer">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.5 6.86603C11.1667 6.48113 11.1667 5.51887 10.5 5.13397L4.5 1.66987C3.83333 1.28497 3 1.7661 3 2.5359L3 9.4641C3 10.2339 3.83333 10.715 4.5 10.3301L10.5 6.86603Z"
+                                            fill="#D9D9D9" />
+                                        <rect x="11" y="1" width="1" height="10" rx="0.5" fill="#D9D9D9" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <!-- Album rasmini ko'rsatish -->
+                            <img src="./img/audio/audio3.png id=" playPauseBtn"" class=rounded-lg w-[42px] h-[42px]
+                                mr-2.5" alt="album cover">
+
+
+                            <div class="flex-grow">
+                                <p class="font-normal text-sm text-[#434343] mb-0.5 leading-[14px]">Песень 3, глава 2,
+                                    2.2.39
+                                </p>
+                                <div class="flex items-center justify-between mb-1.5">
+                                    <p class="font-normal  text-sm text-[#9E9E9E] leading-[15px]">Shrimad Bhavagatam
+                                    </p>
+                                    <span id="durationTime"
+                                        class="font-normal text-sm text-[#9E9E9E] leading-[11px] mx-2">32:20</span>
+                                </div>
+
+                                <!-- Progress Bar -->
+                                <div class="w-full bg-[#E9E9E9] h-[3px]">
+                                    <div id="progressBar" class="bg-[#4034E0] h-[3px]" style="width: 0%"></div>
+                                </div>
+                            </div>
+
+                            <div class="max-[520px]:hidden flex items-center gap-2 ml-6">
+                                <input type="range" id="volumeControl" min="0" max="100" value="100" step="1"
+                                    class="max-w-[38px] max-h-0.5 outline-none">
+                                <button>
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M6.78602 11.9791C6.54785 11.9159 6.53467 11.9053 5.52331 10.9594C5.2624 10.7153 4.48918 9.99507 3.80505 9.35882L2.56121 8.20202L1.49238 8.19398L0.423567 8.18594L0.327875 8.14337C0.206023 8.08917 0.101995 7.99046 0.0448642 7.87485L0 7.78405V5.99965V4.21525L0.0471854 4.13027C0.143894 3.95611 0.282773 3.85589 0.473277 3.82279C0.538252 3.81149 0.925003 3.80532 1.56671 3.80532H2.5596L3.17738 3.23178C3.51716 2.91635 4.36198 2.12965 5.05476 1.48355C6.36191 0.264515 6.48779 0.15184 6.6179 0.0845156C7.01288 -0.119903 7.37203 0.0566559 7.47201 0.504413C7.50966 0.672998 7.50952 11.4216 7.47186 11.5587C7.38072 11.8908 7.10047 12.0625 6.78602 11.9791ZM11.0528 11.4332C10.7206 11.3319 10.5562 10.9702 10.7082 10.6754C10.7708 10.5541 10.8655 10.4706 11.0293 10.3925C11.5509 10.1439 12.1043 9.74303 12.5 9.32732C13.422 8.35869 13.8882 7.15256 13.8451 5.84693C13.8203 5.09539 13.6541 4.46546 13.3063 3.80532C12.8092 2.86154 12.0214 2.10123 11.0546 1.63222C10.8231 1.51991 10.7326 1.44555 10.667 1.31358C10.6297 1.23861 10.6231 1.20319 10.6234 1.08049C10.6238 0.903106 10.6623 0.81604 10.7952 0.69208C10.9185 0.577059 11.0345 0.536629 11.2162 0.545341C11.3354 0.551064 11.3693 0.56026 11.4957 0.621251C13.0136 1.35329 14.163 2.61245 14.6886 4.11879C14.8917 4.70092 14.9821 5.20745 14.9975 5.84944C15.0122 6.45957 14.962 6.91754 14.8224 7.44646C14.5352 8.53459 13.9852 9.45197 13.1402 10.2522C12.6333 10.7323 12.0754 11.1185 11.5277 11.3683C11.3407 11.4537 11.1883 11.4745 11.0528 11.4332ZM9.77254 9.91736C9.60428 9.86018 9.49781 9.767 9.42401 9.61239C9.3711 9.5015 9.37167 9.29336 9.4252 9.18264C9.48073 9.06777 9.59988 8.9609 9.77574 8.86819C10.5921 8.43783 11.211 7.67128 11.4365 6.81147C11.5412 6.41207 11.5686 5.9089 11.5065 5.52696C11.3363 4.47969 10.6811 3.58934 9.7251 3.10612C9.58353 3.03457 9.49808 2.96049 9.44029 2.85923C9.24462 2.51635 9.48658 2.08813 9.89351 2.05713C10.0451 2.04559 10.1372 2.07179 10.3435 2.18509C10.7329 2.39901 11.0555 2.6356 11.3723 2.93962C11.7332 3.28599 11.9868 3.62723 12.2246 4.08664C12.5683 4.75039 12.7203 5.42141 12.6927 6.15237C12.6352 7.67303 11.7837 9.01133 10.3727 9.79886C10.1689 9.9126 10.1163 9.93147 9.97924 9.93996C9.8909 9.94543 9.83816 9.93966 9.77254 9.91736ZM8.29144 8.12448C7.85229 7.969 7.76575 7.43185 8.13657 7.16316C8.17159 7.13779 8.26506 7.09812 8.34427 7.075C8.57627 7.00732 8.73948 6.91826 8.88559 6.77962C9.11259 6.56426 9.20862 6.35899 9.22161 6.06151C9.23664 5.71672 9.13751 5.47155 8.88762 5.2356C8.7277 5.0846 8.58968 5.00567 8.38569 4.94852C8.31996 4.93012 8.23064 4.89271 8.18719 4.86541C7.88824 4.67753 7.85271 4.24589 8.11715 4.01461C8.2407 3.90654 8.32472 3.87761 8.5137 3.87804C8.64721 3.87836 8.69776 3.88626 8.81019 3.92437C9.61236 4.19631 10.1716 4.80473 10.3455 5.59473C10.3969 5.82855 10.3973 6.17679 10.3464 6.41284C10.2483 6.86711 10.0499 7.21897 9.70861 7.54398C9.43307 7.80635 9.14701 7.97696 8.79154 8.09098C8.63048 8.14265 8.38852 8.15885 8.29144 8.12448Z"
+                                            fill="#D9D9D9" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <!-- Yuklab olish -->
+                            <a href="./music/book_1.mp3" download class="bg-transparent ml-3">
+                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.82148 0.017224C5.56088 0.0612064 5.35729 0.213381 5.24373 0.449052L5.18078 0.579719L5.17315 2.66205L5.16555 4.74436L4.39349 4.75272C3.65702 4.76067 3.61623 4.76372 3.50784 4.8191C3.18553 4.98374 3.08874 5.3535 3.29383 5.63653C3.3303 5.68683 4.09601 6.43009 4.99542 7.28823C6.73278 8.9459 6.7429 8.95431 7 8.95431C7.25622 8.95431 7.26952 8.94328 8.97827 7.31421C9.8632 6.47055 10.6297 5.72559 10.6815 5.65874C10.9117 5.36218 10.8279 4.99061 10.4922 4.8191C10.3838 4.76372 10.343 4.76067 9.60651 4.75272L8.83445 4.74436L8.82685 2.66205L8.81922 0.579719L8.75597 0.446256C8.67751 0.280622 8.53293 0.143422 8.35415 0.0648651C8.21898 0.00549011 8.20402 0.00473224 7.08207 0.000446364C6.45765 -0.00195791 5.89039 0.00559464 5.82148 0.017224ZM0.420732 5.77508C0.260094 5.84907 0.150667 5.94819 0.0691718 6.09352C0.0111757 6.19701 0.010273 6.21927 0.00244896 7.76639C-0.00422605 9.08184 0.00132734 9.37587 0.0369183 9.59192C0.233175 10.7834 1.16825 11.7093 2.42127 11.9528C2.6492 11.9971 2.92783 12 7 12C11.0722 12 11.3508 11.9971 11.5787 11.9528C12.8317 11.7093 13.7668 10.7834 13.9631 9.59192C13.9987 9.37587 14.0042 9.08184 13.9976 7.76639C13.9897 6.21927 13.9888 6.19701 13.9308 6.09352C13.8471 5.94411 13.738 5.84753 13.5691 5.77302C13.2463 5.63062 12.8573 5.7755 12.6727 6.10693C12.6251 6.19251 12.6209 6.30337 12.6081 7.83173L12.5944 9.46506L12.5234 9.65066C12.3471 10.1108 11.9624 10.462 11.4728 10.6095L11.2813 10.6672H7H2.71869L2.52719 10.6092C2.01705 10.4548 1.63326 10.0892 1.44975 9.58266C1.41359 9.48289 1.40494 9.2174 1.39269 7.83173C1.37914 6.30421 1.3749 6.19246 1.32728 6.10693C1.14278 5.77561 0.739847 5.62814 0.420732 5.77508Z"
+                                        fill="#4034E0" />
+                                </svg>
+                            </a>
+                        </div>
+                        <audio id="audioPlayer" src="./music/book_1.mp3"></audio>
+                    </div>
+                    <div class="pt-4">
+                        <div class="flex items-center">
+                            <!-- Ovoz O'ynatish Tugi -->
+                            <button id="playPauseBtn"
+                                class="bg-[#2B1EDD] max-[520px]:hidden max-w-[30px] h-[30px]  rounded-full w-12  flex items-center justify-center mr-2.5">
+                                <svg width="9" height="11" viewBox="0 0 9 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 5.5L0.750001 10.2631L0.750001 0.73686L9 5.5Z" fill="white" />
+                                </svg>
+                            </button>
+                            <div class="max-[520px]:hidden flex items-center gap-1 mr-5">
+                                <button class="cursor-pointer">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.5 5.13397C0.833333 5.51887 0.833333 6.48113 1.5 6.86603L7.5 10.3301C8.16667 10.715 9 10.2339 9 9.4641L9 2.5359C9 1.7661 8.16667 1.28497 7.5 1.66987L1.5 5.13397Z"
+                                            fill="#D9D9D9" />
+                                        <rect x="1" y="11" width="1" height="10" rx="0.5" transform="rotate(-180 1 11)"
+                                            fill="#D9D9D9" />
+                                    </svg>
+                                </button>
+                                <button class="cursor-pointer">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.5 6.86603C11.1667 6.48113 11.1667 5.51887 10.5 5.13397L4.5 1.66987C3.83333 1.28497 3 1.7661 3 2.5359L3 9.4641C3 10.2339 3.83333 10.715 4.5 10.3301L10.5 6.86603Z"
+                                            fill="#D9D9D9" />
+                                        <rect x="11" y="1" width="1" height="10" rx="0.5" fill="#D9D9D9" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <!-- Album rasmini ko'rsatish -->
+                            <img src="./img/audio/audio4.png id=" playPauseBtn"" class=rounded-lg w-[42px] h-[42px]
+                                mr-2.5" alt="album cover">
+
+
+                            <div class="flex-grow">
+                                <p class="font-normal text-sm text-[#434343] mb-0.5 leading-[14px]">Песень 4, глава 2,
+                                    2.2.40
+                                </p>
+                                <div class="flex items-center justify-between mb-1.5">
+                                    <p class="font-normal  text-sm text-[#9E9E9E] leading-[15px]">Shrimad Bhavagatam
+                                    </p>
+                                    <span id="durationTime"
+                                        class="font-normal text-sm text-[#9E9E9E] leading-[11px] mx-2">32:20</span>
+                                </div>
+
+                                <!-- Progress Bar -->
+                                <div class="w-full bg-[#E9E9E9] h-[3px]">
+                                    <div id="progressBar" class="bg-[#4034E0] h-[3px]" style="width: 0%"></div>
+                                </div>
+                            </div>
+
+                            <div class="max-[520px]:hidden flex items-center gap-2 ml-6">
+                                <input type="range" id="volumeControl" min="0" max="100" value="100" step="1"
+                                    class="max-w-[38px] max-h-0.5 outline-none">
+                                <button>
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M6.78602 11.9791C6.54785 11.9159 6.53467 11.9053 5.52331 10.9594C5.2624 10.7153 4.48918 9.99507 3.80505 9.35882L2.56121 8.20202L1.49238 8.19398L0.423567 8.18594L0.327875 8.14337C0.206023 8.08917 0.101995 7.99046 0.0448642 7.87485L0 7.78405V5.99965V4.21525L0.0471854 4.13027C0.143894 3.95611 0.282773 3.85589 0.473277 3.82279C0.538252 3.81149 0.925003 3.80532 1.56671 3.80532H2.5596L3.17738 3.23178C3.51716 2.91635 4.36198 2.12965 5.05476 1.48355C6.36191 0.264515 6.48779 0.15184 6.6179 0.0845156C7.01288 -0.119903 7.37203 0.0566559 7.47201 0.504413C7.50966 0.672998 7.50952 11.4216 7.47186 11.5587C7.38072 11.8908 7.10047 12.0625 6.78602 11.9791ZM11.0528 11.4332C10.7206 11.3319 10.5562 10.9702 10.7082 10.6754C10.7708 10.5541 10.8655 10.4706 11.0293 10.3925C11.5509 10.1439 12.1043 9.74303 12.5 9.32732C13.422 8.35869 13.8882 7.15256 13.8451 5.84693C13.8203 5.09539 13.6541 4.46546 13.3063 3.80532C12.8092 2.86154 12.0214 2.10123 11.0546 1.63222C10.8231 1.51991 10.7326 1.44555 10.667 1.31358C10.6297 1.23861 10.6231 1.20319 10.6234 1.08049C10.6238 0.903106 10.6623 0.81604 10.7952 0.69208C10.9185 0.577059 11.0345 0.536629 11.2162 0.545341C11.3354 0.551064 11.3693 0.56026 11.4957 0.621251C13.0136 1.35329 14.163 2.61245 14.6886 4.11879C14.8917 4.70092 14.9821 5.20745 14.9975 5.84944C15.0122 6.45957 14.962 6.91754 14.8224 7.44646C14.5352 8.53459 13.9852 9.45197 13.1402 10.2522C12.6333 10.7323 12.0754 11.1185 11.5277 11.3683C11.3407 11.4537 11.1883 11.4745 11.0528 11.4332ZM9.77254 9.91736C9.60428 9.86018 9.49781 9.767 9.42401 9.61239C9.3711 9.5015 9.37167 9.29336 9.4252 9.18264C9.48073 9.06777 9.59988 8.9609 9.77574 8.86819C10.5921 8.43783 11.211 7.67128 11.4365 6.81147C11.5412 6.41207 11.5686 5.9089 11.5065 5.52696C11.3363 4.47969 10.6811 3.58934 9.7251 3.10612C9.58353 3.03457 9.49808 2.96049 9.44029 2.85923C9.24462 2.51635 9.48658 2.08813 9.89351 2.05713C10.0451 2.04559 10.1372 2.07179 10.3435 2.18509C10.7329 2.39901 11.0555 2.6356 11.3723 2.93962C11.7332 3.28599 11.9868 3.62723 12.2246 4.08664C12.5683 4.75039 12.7203 5.42141 12.6927 6.15237C12.6352 7.67303 11.7837 9.01133 10.3727 9.79886C10.1689 9.9126 10.1163 9.93147 9.97924 9.93996C9.8909 9.94543 9.83816 9.93966 9.77254 9.91736ZM8.29144 8.12448C7.85229 7.969 7.76575 7.43185 8.13657 7.16316C8.17159 7.13779 8.26506 7.09812 8.34427 7.075C8.57627 7.00732 8.73948 6.91826 8.88559 6.77962C9.11259 6.56426 9.20862 6.35899 9.22161 6.06151C9.23664 5.71672 9.13751 5.47155 8.88762 5.2356C8.7277 5.0846 8.58968 5.00567 8.38569 4.94852C8.31996 4.93012 8.23064 4.89271 8.18719 4.86541C7.88824 4.67753 7.85271 4.24589 8.11715 4.01461C8.2407 3.90654 8.32472 3.87761 8.5137 3.87804C8.64721 3.87836 8.69776 3.88626 8.81019 3.92437C9.61236 4.19631 10.1716 4.80473 10.3455 5.59473C10.3969 5.82855 10.3973 6.17679 10.3464 6.41284C10.2483 6.86711 10.0499 7.21897 9.70861 7.54398C9.43307 7.80635 9.14701 7.97696 8.79154 8.09098C8.63048 8.14265 8.38852 8.15885 8.29144 8.12448Z"
+                                            fill="#D9D9D9" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <!-- Yuklab olish -->
+                            <a href="./music/book_1.mp3" download class="bg-transparent ml-3">
+                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.82148 0.017224C5.56088 0.0612064 5.35729 0.213381 5.24373 0.449052L5.18078 0.579719L5.17315 2.66205L5.16555 4.74436L4.39349 4.75272C3.65702 4.76067 3.61623 4.76372 3.50784 4.8191C3.18553 4.98374 3.08874 5.3535 3.29383 5.63653C3.3303 5.68683 4.09601 6.43009 4.99542 7.28823C6.73278 8.9459 6.7429 8.95431 7 8.95431C7.25622 8.95431 7.26952 8.94328 8.97827 7.31421C9.8632 6.47055 10.6297 5.72559 10.6815 5.65874C10.9117 5.36218 10.8279 4.99061 10.4922 4.8191C10.3838 4.76372 10.343 4.76067 9.60651 4.75272L8.83445 4.74436L8.82685 2.66205L8.81922 0.579719L8.75597 0.446256C8.67751 0.280622 8.53293 0.143422 8.35415 0.0648651C8.21898 0.00549011 8.20402 0.00473224 7.08207 0.000446364C6.45765 -0.00195791 5.89039 0.00559464 5.82148 0.017224ZM0.420732 5.77508C0.260094 5.84907 0.150667 5.94819 0.0691718 6.09352C0.0111757 6.19701 0.010273 6.21927 0.00244896 7.76639C-0.00422605 9.08184 0.00132734 9.37587 0.0369183 9.59192C0.233175 10.7834 1.16825 11.7093 2.42127 11.9528C2.6492 11.9971 2.92783 12 7 12C11.0722 12 11.3508 11.9971 11.5787 11.9528C12.8317 11.7093 13.7668 10.7834 13.9631 9.59192C13.9987 9.37587 14.0042 9.08184 13.9976 7.76639C13.9897 6.21927 13.9888 6.19701 13.9308 6.09352C13.8471 5.94411 13.738 5.84753 13.5691 5.77302C13.2463 5.63062 12.8573 5.7755 12.6727 6.10693C12.6251 6.19251 12.6209 6.30337 12.6081 7.83173L12.5944 9.46506L12.5234 9.65066C12.3471 10.1108 11.9624 10.462 11.4728 10.6095L11.2813 10.6672H7H2.71869L2.52719 10.6092C2.01705 10.4548 1.63326 10.0892 1.44975 9.58266C1.41359 9.48289 1.40494 9.2174 1.39269 7.83173C1.37914 6.30421 1.3749 6.19246 1.32728 6.10693C1.14278 5.77561 0.739847 5.62814 0.420732 5.77508Z"
+                                        fill="#4034E0" />
+                                </svg>
+                            </a>
+                        </div>
+                        <audio id="audioPlayer" src="./music/book_1.mp3"></audio>
+                    </div>
+                    <div class="pt-4 ">
+                        <div class="flex items-center">
+                            <!-- Ovoz O'ynatish Tugi -->
+                            <button id="playPauseBtn"
+                                class="bg-[#2B1EDD] max-[520px]:hidden max-w-[30px] h-[30px]  rounded-full w-12  flex items-center justify-center mr-2.5">
+                                <svg width="9" height="11" viewBox="0 0 9 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 5.5L0.750001 10.2631L0.750001 0.73686L9 5.5Z" fill="white" />
+                                </svg>
+                            </button>
+                            <div class="max-[520px]:hidden flex items-center gap-1 mr-5">
+                                <button class="cursor-pointer">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.5 5.13397C0.833333 5.51887 0.833333 6.48113 1.5 6.86603L7.5 10.3301C8.16667 10.715 9 10.2339 9 9.4641L9 2.5359C9 1.7661 8.16667 1.28497 7.5 1.66987L1.5 5.13397Z"
+                                            fill="#D9D9D9" />
+                                        <rect x="1" y="11" width="1" height="10" rx="0.5" transform="rotate(-180 1 11)"
+                                            fill="#D9D9D9" />
+                                    </svg>
+                                </button>
+                                <button class="cursor-pointer">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.5 6.86603C11.1667 6.48113 11.1667 5.51887 10.5 5.13397L4.5 1.66987C3.83333 1.28497 3 1.7661 3 2.5359L3 9.4641C3 10.2339 3.83333 10.715 4.5 10.3301L10.5 6.86603Z"
+                                            fill="#D9D9D9" />
+                                        <rect x="11" y="1" width="1" height="10" rx="0.5" fill="#D9D9D9" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <!-- Album rasmini ko'rsatish -->
+                            <img src="./img/audio/audio5.png id=" playPauseBtn"" class=rounded-lg w-[42px] h-[42px]
+                                mr-2.5" alt="album cover">
+
+
+                            <div class="flex-grow">
+                                <p class="font-normal text-sm text-[#434343] mb-0.5 leading-[14px]">Песень 5, глава 2,
+                                    2.2.31
+                                </p>
+                                <div class="flex items-center justify-between mb-1.5">
+                                    <p class="font-normal  text-sm text-[#9E9E9E] leading-[15px]">Shrimad Bhavagatam
+                                    </p>
+                                    <span id="durationTime"
+                                        class="font-normal text-sm text-[#9E9E9E] leading-[11px] mx-2">32:20</span>
+                                </div>
+
+                                <!-- Progress Bar -->
+                                <div class="w-full bg-[#E9E9E9] h-[3px]">
+                                    <div id="progressBar" class="bg-[#4034E0] h-[3px]" style="width: 0%"></div>
+                                </div>
+                            </div>
+
+                            <div class="max-[520px]:hidden flex items-center gap-2 ml-6">
+                                <input type="range" id="volumeControl" min="0" max="100" value="100" step="1"
+                                    class="max-w-[38px] max-h-0.5 outline-none">
+                                <button>
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M6.78602 11.9791C6.54785 11.9159 6.53467 11.9053 5.52331 10.9594C5.2624 10.7153 4.48918 9.99507 3.80505 9.35882L2.56121 8.20202L1.49238 8.19398L0.423567 8.18594L0.327875 8.14337C0.206023 8.08917 0.101995 7.99046 0.0448642 7.87485L0 7.78405V5.99965V4.21525L0.0471854 4.13027C0.143894 3.95611 0.282773 3.85589 0.473277 3.82279C0.538252 3.81149 0.925003 3.80532 1.56671 3.80532H2.5596L3.17738 3.23178C3.51716 2.91635 4.36198 2.12965 5.05476 1.48355C6.36191 0.264515 6.48779 0.15184 6.6179 0.0845156C7.01288 -0.119903 7.37203 0.0566559 7.47201 0.504413C7.50966 0.672998 7.50952 11.4216 7.47186 11.5587C7.38072 11.8908 7.10047 12.0625 6.78602 11.9791ZM11.0528 11.4332C10.7206 11.3319 10.5562 10.9702 10.7082 10.6754C10.7708 10.5541 10.8655 10.4706 11.0293 10.3925C11.5509 10.1439 12.1043 9.74303 12.5 9.32732C13.422 8.35869 13.8882 7.15256 13.8451 5.84693C13.8203 5.09539 13.6541 4.46546 13.3063 3.80532C12.8092 2.86154 12.0214 2.10123 11.0546 1.63222C10.8231 1.51991 10.7326 1.44555 10.667 1.31358C10.6297 1.23861 10.6231 1.20319 10.6234 1.08049C10.6238 0.903106 10.6623 0.81604 10.7952 0.69208C10.9185 0.577059 11.0345 0.536629 11.2162 0.545341C11.3354 0.551064 11.3693 0.56026 11.4957 0.621251C13.0136 1.35329 14.163 2.61245 14.6886 4.11879C14.8917 4.70092 14.9821 5.20745 14.9975 5.84944C15.0122 6.45957 14.962 6.91754 14.8224 7.44646C14.5352 8.53459 13.9852 9.45197 13.1402 10.2522C12.6333 10.7323 12.0754 11.1185 11.5277 11.3683C11.3407 11.4537 11.1883 11.4745 11.0528 11.4332ZM9.77254 9.91736C9.60428 9.86018 9.49781 9.767 9.42401 9.61239C9.3711 9.5015 9.37167 9.29336 9.4252 9.18264C9.48073 9.06777 9.59988 8.9609 9.77574 8.86819C10.5921 8.43783 11.211 7.67128 11.4365 6.81147C11.5412 6.41207 11.5686 5.9089 11.5065 5.52696C11.3363 4.47969 10.6811 3.58934 9.7251 3.10612C9.58353 3.03457 9.49808 2.96049 9.44029 2.85923C9.24462 2.51635 9.48658 2.08813 9.89351 2.05713C10.0451 2.04559 10.1372 2.07179 10.3435 2.18509C10.7329 2.39901 11.0555 2.6356 11.3723 2.93962C11.7332 3.28599 11.9868 3.62723 12.2246 4.08664C12.5683 4.75039 12.7203 5.42141 12.6927 6.15237C12.6352 7.67303 11.7837 9.01133 10.3727 9.79886C10.1689 9.9126 10.1163 9.93147 9.97924 9.93996C9.8909 9.94543 9.83816 9.93966 9.77254 9.91736ZM8.29144 8.12448C7.85229 7.969 7.76575 7.43185 8.13657 7.16316C8.17159 7.13779 8.26506 7.09812 8.34427 7.075C8.57627 7.00732 8.73948 6.91826 8.88559 6.77962C9.11259 6.56426 9.20862 6.35899 9.22161 6.06151C9.23664 5.71672 9.13751 5.47155 8.88762 5.2356C8.7277 5.0846 8.58968 5.00567 8.38569 4.94852C8.31996 4.93012 8.23064 4.89271 8.18719 4.86541C7.88824 4.67753 7.85271 4.24589 8.11715 4.01461C8.2407 3.90654 8.32472 3.87761 8.5137 3.87804C8.64721 3.87836 8.69776 3.88626 8.81019 3.92437C9.61236 4.19631 10.1716 4.80473 10.3455 5.59473C10.3969 5.82855 10.3973 6.17679 10.3464 6.41284C10.2483 6.86711 10.0499 7.21897 9.70861 7.54398C9.43307 7.80635 9.14701 7.97696 8.79154 8.09098C8.63048 8.14265 8.38852 8.15885 8.29144 8.12448Z"
+                                            fill="#D9D9D9" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <!-- Yuklab olish -->
+                            <a href="./music/book_1.mp3" download class="bg-transparent ml-3">
+                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.82148 0.017224C5.56088 0.0612064 5.35729 0.213381 5.24373 0.449052L5.18078 0.579719L5.17315 2.66205L5.16555 4.74436L4.39349 4.75272C3.65702 4.76067 3.61623 4.76372 3.50784 4.8191C3.18553 4.98374 3.08874 5.3535 3.29383 5.63653C3.3303 5.68683 4.09601 6.43009 4.99542 7.28823C6.73278 8.9459 6.7429 8.95431 7 8.95431C7.25622 8.95431 7.26952 8.94328 8.97827 7.31421C9.8632 6.47055 10.6297 5.72559 10.6815 5.65874C10.9117 5.36218 10.8279 4.99061 10.4922 4.8191C10.3838 4.76372 10.343 4.76067 9.60651 4.75272L8.83445 4.74436L8.82685 2.66205L8.81922 0.579719L8.75597 0.446256C8.67751 0.280622 8.53293 0.143422 8.35415 0.0648651C8.21898 0.00549011 8.20402 0.00473224 7.08207 0.000446364C6.45765 -0.00195791 5.89039 0.00559464 5.82148 0.017224ZM0.420732 5.77508C0.260094 5.84907 0.150667 5.94819 0.0691718 6.09352C0.0111757 6.19701 0.010273 6.21927 0.00244896 7.76639C-0.00422605 9.08184 0.00132734 9.37587 0.0369183 9.59192C0.233175 10.7834 1.16825 11.7093 2.42127 11.9528C2.6492 11.9971 2.92783 12 7 12C11.0722 12 11.3508 11.9971 11.5787 11.9528C12.8317 11.7093 13.7668 10.7834 13.9631 9.59192C13.9987 9.37587 14.0042 9.08184 13.9976 7.76639C13.9897 6.21927 13.9888 6.19701 13.9308 6.09352C13.8471 5.94411 13.738 5.84753 13.5691 5.77302C13.2463 5.63062 12.8573 5.7755 12.6727 6.10693C12.6251 6.19251 12.6209 6.30337 12.6081 7.83173L12.5944 9.46506L12.5234 9.65066C12.3471 10.1108 11.9624 10.462 11.4728 10.6095L11.2813 10.6672H7H2.71869L2.52719 10.6092C2.01705 10.4548 1.63326 10.0892 1.44975 9.58266C1.41359 9.48289 1.40494 9.2174 1.39269 7.83173C1.37914 6.30421 1.3749 6.19246 1.32728 6.10693C1.14278 5.77561 0.739847 5.62814 0.420732 5.77508Z"
+                                        fill="#4034E0" />
+                                </svg>
+                            </a>
+                        </div>
+                        <audio id="audioPlayer" src="./music/book_1.mp3"></audio>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between">
+                    <a href="#" class="font-normal text-sm text-[#5C90DE] leading-[35px]">Открыть весь альбом</a>
+                    <p class="font-normal text-sm text-[#D9D9D9] leading-[35px] max-[520px]:hidden">93 записи</p>
+                </div>
+            </div>
+        </div>
+        <button class="max-w-[177px] mx-auto bg-[#ECECEC] px-1.5 rounded-[3px] flex  justify-center">
+            <span class="block w-[166px] leading-[36px] font-semibold text-[15px] text-[#434343]">Перейти в
+                лектории</span>
+        </button>
+    </section>
+    <!-- audio end -->
     <script src="./js/app.js"></script>
 </body>
 
