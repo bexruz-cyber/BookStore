@@ -85,17 +85,18 @@ body {
     background-size: cover;
 }
 
-.hover_btn_2{
+.hover_btn_2 {
     background-color: #ECECEC;
     border: 1px solid transparent;
     transition: all .3s;
 }
-.hover_btn_2:hover{
+
+.hover_btn_2:hover {
     background-color: transparent;
     border: 1px solid #ECECEC;
 }
 
-.team_link{
+.team_link {
     font-weight: 600;
     font-size: 15px;
     line-height: 24px;
@@ -103,21 +104,39 @@ body {
     border: 1px solid #828282;
     transition: all .3s;
 }
-.team_img{
+
+.team_img {
     filter: grayscale(0);
     transition: all .3s;
 }
-.team_card:hover .team_img{
+
+.team_card:hover .team_img {
     filter: grayscale(100%);
 }
-.team_card:hover .team_link{
+
+.team_card:hover .team_link {
     background: linear-gradient(82.09deg, #E122F9 -1.27%, #2B1EDD 69.03%);
     border: 1px solid transparent;
     color: white;
 }
 
 
-@media(max-width: 768px){
+.swiper-button-disabled {
+    opacity: 50%;
+}
+
+.book_btn_box:hover .btn_shop {
+    background: linear-gradient(82.09deg, #E122F9 -1.27%, #2B1EDD 69.03%);
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    border: none;
+}
+.book_btn_box:hover .book_btn_svg{
+    color: #2B1EDD;
+}
+
+@media(max-width: 768px) {
     .audio_top {
         background-image: url(../../public/img/audio/mobile_bg.png);
         background-size: cover;
