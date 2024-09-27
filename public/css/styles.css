@@ -669,11 +669,29 @@ video {
 .mt-9 {
   margin-top: 2.25rem;
 }
+.mt-\[64px\] {
+  margin-top: 64px;
+}
+.mb-auto {
+  margin-bottom: auto;
+}
 .line-clamp-1 {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
+}
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.line-clamp-3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }
 .block {
   display: block;
@@ -728,6 +746,15 @@ video {
 .h-screen {
   height: 100vh;
 }
+.h-\[\] {
+  height: ;
+}
+.h-\[531\] {
+  height: 531;
+}
+.h-\[531px\] {
+  height: 531px;
+}
 .max-h-0\.5 {
   max-height: 0.125rem;
 }
@@ -736,6 +763,12 @@ video {
 }
 .max-h-\[633px\] {
   max-height: 633px;
+}
+.max-h-\[531px\] {
+  max-height: 531px;
+}
+.max-h-\[595px\] {
+  max-height: 595px;
 }
 .w-12 {
   width: 3rem;
@@ -996,6 +1029,9 @@ video {
 }
 .overflow-x-hidden {
   overflow-x: hidden;
+}
+.overflow-y-hidden {
+  overflow-y: hidden;
 }
 .rounded-\[10px\] {
   border-radius: 10px;
@@ -1296,6 +1332,9 @@ video {
 }
 .pt-\[81px\] {
   padding-top: 81px;
+}
+.pt-\[64px\] {
+  padding-top: 64px;
 }
 .text-left {
   text-align: left;
@@ -1745,6 +1784,14 @@ body {
     height: 350px;
   }
 
+  .max-lg\:max-h-\[\] {
+    max-height: ;
+  }
+
+  .max-lg\:max-h-\[494px\] {
+    max-height: 494px;
+  }
+
   .max-lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1820,6 +1867,10 @@ body {
 
   .max-md\:ml-auto {
     margin-left: auto;
+  }
+
+  .max-md\:mt-12 {
+    margin-top: 3rem;
   }
 
   .max-md\:block {
