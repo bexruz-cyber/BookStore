@@ -53,7 +53,6 @@ body {
     /* text-4xl (equivalent to 36px) */
     line-height: 2.25rem;
     /* leading-9 */
-    color: #3B3B3B;
     /* text-[#3B3B3B] */
 }
 
@@ -124,13 +123,13 @@ body {
 .swiper-button-disabled {
     opacity: 50%;
 }
-
+.btn_shop{
+    border: 1px solid #828282;
+}
 .book_btn_box:hover .btn_shop {
     background: linear-gradient(82.09deg, #E122F9 -1.27%, #2B1EDD 69.03%);
-    font-size: 15px;
-    font-weight: 600;
     color: white;
-    border: none;
+    border: 1px solid transparent;
 }
 .book_btn_box:hover .book_btn_svg{
     color: #2B1EDD;
