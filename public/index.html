@@ -415,7 +415,8 @@
                 </div>
             </div>
             <div class="lg:max-w-[247px] w-full max-h-[633px]  relative">
-                <div class="flex flex-col gap-2 md:gap-6 max-h-[290px] md:max-h-[493px] overflow-y-auto custom-scrollbar">
+                <div
+                    class="flex flex-col gap-2 md:gap-6 max-h-[290px] md:max-h-[493px] overflow-y-auto custom-scrollbar">
                     <div
                         class="mini_video_card cursor-pointer lg:max-w-[222px] gap-2.5 max-lg:flex items-center w-full relative">
                         <div class="max-w-[140px] lg:max-w-[222px] h-[78px] md:h-[126px] absolute top-0 left-0"></div>
@@ -1104,7 +1105,7 @@
     <!--blog end -->
 
     <!-- team start -->
-    <section class="pb-[453px] max-md:pl-0 max-2xl:pl-[118px] max-md:pb-0">
+    <section class="relative z-30  max-md:pl-0 max-2xl:pl-[118px] max-md:pb-0">
         <div class="max-w-[1240px] w-full mx-auto md:px-5 px-[42px]">
             <h1 class="title text-[#3B3B3B] mb-14 max-md:mb-9">наша команда</h1>
             <div
@@ -1147,13 +1148,13 @@
     </section>
     <!-- team end -->
 
+   
     <!-- footer start -->
-    <section class="bg-transparent max-md:pt-[50px] relative max-md:pl-0 max-2xl:pl-[118px] pb-11 md:pb-[58px] max-md:pb-11">
-        <div class="w-full absolute max-lg:hidden z-20 bottom-0 right-0">
-            <img src="./img/footer_bg.png" alt="" class="w-full object-cover">
-        </div>
-        <div class="max-w-[1240px]  mx-auto relative z-30 bg-transparent max-md:px-[42px] px-5">
-            <a href="./index.html#top" class="bg-[#8D8D8D] max-sm:bottom-[22px] max-lg:bottom-0 rounded-full absolute right-0 lg:top-[9px] p-[26px]">
+    <footer
+        class="bg-transparent max-md:pt-[50px] pt-[493px] relative max-md:pl-0 max-2xl:pl-[118px] pb-11 md:pb-[58px] max-md:pb-11">
+        <div class="max-w-[1240px] mx-auto relative z-40 bg-transparent max-md:px-[42px] px-5">
+            <a href="./index.html#top"
+                class="bg-[#8D8D8D] max-sm:bottom-[22px] max-lg:bottom-0 rounded-full absolute right-0 lg:top-[9px] p-[26px]">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 20L12 4" stroke="white" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" />
@@ -1214,9 +1215,8 @@
                                 </clipPath>
                             </defs>
                         </svg>
-
                     </a>
-                    <ul class="flex flex-col gap-4 ">
+                    <ul class="flex flex-col gap-4">
                         <li>
                             <a href="#" class="flex items-center gap-2">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -1226,9 +1226,9 @@
                                         fill="#3B3B3B" />
                                 </svg>
 
-                                <p
-                                    class="font-light text-lg text-[#3B3B3B] leading-6  hover:font-semibold">
-                                    Новости</p>
+                                <p class="font-light text-lg text-[#3B3B3B] leading-6 hover:font-semibold">
+                                    Новости
+                                </p>
                             </a>
                         </li>
                         <li>
@@ -1243,9 +1243,9 @@
                                         fill="#3B3B3B" />
                                 </svg>
 
-                                <p
-                                    class="font-light text-lg text-[#3B3B3B] leading-6  hover:font-semibold">
-                                    Чат с менеджером</p>
+                                <p class="font-light text-lg text-[#3B3B3B] leading-6 hover:font-semibold">
+                                    Чат с менеджером
+                                </p>
                             </a>
                         </li>
                         <li>
@@ -1258,8 +1258,9 @@
                                 </svg>
 
                                 <p
-                                    class="font-light text-lg text-[#3B3B3B] leading-6 transition-all duration-300  hover:font-semibold">
-                                    Группа ВК</p>
+                                    class="font-light text-lg text-[#3B3B3B] leading-6 transition-all duration-300 hover:font-semibold">
+                                    Группа ВК
+                                </p>
                             </a>
                         </li>
                         <li>
@@ -1271,47 +1272,60 @@
                                 </svg>
 
                                 <p
-                                    class="font-light text-lg text-[#3B3B3B] leading-6 transition-all duration-300  hover:font-semibold">
-                                    Ютуб канал</p>
+                                    class="font-light text-lg text-[#3B3B3B] leading-6 transition-all duration-300 hover:font-semibold">
+                                    Ютуб канал
+                                </p>
                             </a>
                         </li>
                     </ul>
                 </div>
                 <div class="mr-[187px] max-lg:mx-auto max-md:mx-0 md:pt-[15px] max-w-[128px] w-full">
-                    <h2 class="font-semibold text-xl text-[#3B3B3B] mb-9 md:mb-[55px]">Интересное</h2>
-                    <ul class="flex flex-col gap-4 ">
-                        <li><a href="#"
-                                class="font-light text-lg text-[#3B3B3B] leading-6  hover:font-semibold">Кто
-                                мы</a></li>
-                        <li><a href="#"
-                                class="font-light text-lg text-[#3B3B3B] leading-6  hover:font-semibold">Наш
-                                блог</a></li>
-                        <li><a href="#"
-                                class="font-light text-lg text-[#3B3B3B] leading-6  hover:font-semibold">Наша
-                                команда</a></li>
+                    <h2 class="font-semibold text-xl text-[#3B3B3B] mb-9 md:mb-[55px]">
+                        Интересное
+                    </h2>
+                    <ul class="flex flex-col gap-4">
+                        <li>
+                            <a href="#" class="font-light text-lg text-[#3B3B3B] leading-6 hover:font-semibold">Кто
+                                мы</a>
+                        </li>
+                        <li>
+                            <a href="#" class="font-light text-lg text-[#3B3B3B] leading-6 hover:font-semibold">Наш
+                                блог</a>
+                        </li>
+                        <li>
+                            <a href="#" class="font-light text-lg text-[#3B3B3B] leading-6 hover:font-semibold">Наша
+                                команда</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="md:pt-[15px]">
-                    <h2 class="font-semibold text-xl text-[#3B3B3B] mb-9 md:mb-[55px]">Меню</h2>
+                    <h2 class="font-semibold text-xl text-[#3B3B3B] mb-9 md:mb-[55px]">
+                        Меню
+                    </h2>
                     <ul class="flex flex-col gap-4">
-                        <li><a href="#"
-                                class="font-light text-lg text-[#3B3B3B] leading-6  hover:font-semibold">Об
-                                авторе</a></li>
-                        <li><a href="#"
-                                class="font-light text-lg text-[#3B3B3B] leading-6  hover:font-semibold">Книги</a>
+                        <li>
+                            <a href="#" class="font-light text-lg text-[#3B3B3B] leading-6 hover:font-semibold">Об
+                                авторе</a>
                         </li>
-                        <li><a href="#"
-                                class="font-light text-lg text-[#3B3B3B] leading-6  hover:font-semibold">Комплекты</a>
+                        <li>
+                            <a href="#"
+                                class="font-light text-lg text-[#3B3B3B] leading-6 hover:font-semibold">Книги</a>
                         </li>
-                        <li><a href="#"
-                                class="font-light text-lg text-[#3B3B3B] leading-6  hover:font-semibold">Блог</a>
+                        <li>
+                            <a href="#"
+                                class="font-light text-lg text-[#3B3B3B] leading-6 hover:font-semibold">Комплекты</a>
                         </li>
-                        <li><a href="#"
-                                class="font-light text-lg text-[#3B3B3B] leading-6  hover:font-semibold">Медиа</a>
+                        <li>
+                            <a href="#" class="font-light text-lg text-[#3B3B3B] leading-6 hover:font-semibold">Блог</a>
                         </li>
-                        <li><a href="#"
-                                class="font-light text-lg text-[#3B3B3B] leading-6  hover:font-semibold">О
-                                нас</a></li>
+                        <li>
+                            <a href="#"
+                                class="font-light text-lg text-[#3B3B3B] leading-6 hover:font-semibold">Медиа</a>
+                        </li>
+                        <li>
+                            <a href="#" class="font-light text-lg text-[#3B3B3B] leading-6 hover:font-semibold">О
+                                нас</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -1320,19 +1334,26 @@
                     class="linear_default_gradiend rounded-[3px] max-w-[290px] sm:max-w-[208px] px-5 w-full flex justify-center py-3 font-semibold text-[15px] text-white leading-6">Перейти
                     в магазин</a>
                 <a href="#"
-                    class="2xl:bg-[#F8F8F8]  rounded-[3px] max-w-[290px] sm:max-w-[208px] w-full flex justify-center px-5 py-3 font-light text-[15px] text-[#3B3B3B] leading-6">О
+                    class="2xl:bg-[#F8F8F8] rounded-[3px] max-w-[290px] sm:max-w-[208px] w-full flex justify-center px-5 py-3 font-light text-[15px] text-[#3B3B3B] leading-6">О
                     доставке</a>
             </div>
             <div class="flex max-sm:flex-col sm:items-center gap-[62px]">
-                <p class="font-normal text-[15px] leading-6 text-[#3B3B3B]">Разработчик сайта: Bexruz Xasanboyev</p>
-                <p class="font-normal max-sm:hidden text-[15px] leading-6 text-[#3B3B3B]">108books © 2024</p>
+                <p class="font-normal text-[15px] leading-6 text-[#3B3B3B]">
+                    Разработчик сайта: Bexruz Xasanboyev
+                </p>
+                <p class="font-normal max-sm:hidden text-[15px] leading-6 text-[#3B3B3B]">
+                    108books © 2024
+                </p>
             </div>
         </div>
-        <div class="max-w-[1114px]  w-full absolute z-20 bottom-0 right-0">
-            <img src="./img/footer_right.png" alt="" class="w-full max-md:hidden object-cover">
-            <img src="./img/footer_right_2.png" alt="" class="w-full md:hidden object-cover">
+        <div class="max-w-[1114px] w-full absolute z-30 bottom-0 right-0">
+            <img src="./img/footer_right.png" alt="" class="w-full max-md:hidden object-cover" />
+            <img src="./img/footer_right_2.png" alt="" class="w-full md:hidden object-cover" />
         </div>
-    </section>
+        <div class="w-full absolute max-lg:hidden z-20 bottom-0 right-0">
+            <img src="./img/footer_bg.png" alt="" class="w-full " />
+        </div>
+    </footer>
     <!-- footer end -->
     <script src="./js/header_menu.js"></script>
     <script src="./js/app.js"></script>
