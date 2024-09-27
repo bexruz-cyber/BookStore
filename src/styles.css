@@ -135,6 +135,12 @@ body {
     color: #2B1EDD;
 }
 
+.books_box {
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+
 @media(max-width: 768px) {
     .audio_top {
         background-image: url(../../public/img/audio/mobile_bg.png);
